@@ -2,6 +2,11 @@
 const {$api} = useNuxtApp()
 
 const {data} = useAsyncData(()=>$api.blank.services())
+
+useSeoMeta({
+  title: 'Услуги Технореал – проектирование и производство мебели ',
+  description: 'Индивидуальное проектирование и производство торговой мебели, витрин, стеллажей, ресепшенов, мебели для HoReCa и рекламных решений. '
+})
 </script>
 
 <template>

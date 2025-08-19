@@ -2,7 +2,7 @@
 const links = [
   {label:'О нас',to:'/about'},
   {label:'Услуги',to:'/services'},
-  // {label:'Новости',to:'/news'},
+  {label:'Новости',to:'/news'},
   {label:'Наши проекты',to:'/cases'},
   {label:'Контакты',to:'/'},
 ]

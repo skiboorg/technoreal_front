@@ -2,6 +2,11 @@
 const {$api} = useNuxtApp()
 const {slug} = useRoute().params
 const {data} = await useAsyncData(()=>$api.blank.service(slug))
+
+useSeoMeta({
+  title: 'Услуги Технореал – проектирование и производство мебели ',
+  description: 'Индивидуальное проектирование и производство торговой мебели, витрин, стеллажей, ресепшенов, мебели для HoReCa и рекламных решений. '
+})
 </script>
 
 <template>
@@ -66,8 +71,7 @@ const {data} = await useAsyncData(()=>$api.blank.service(slug))
     <img class="w-full h-[500px] md:h-full object-cover mb-[80px] md:mb-32" :src="data.large_photo_1" alt="">
     <BlockTitleWithSmallText  extra_class="max-w-[50%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
                              big-text="Проекты, которые мы реализовали"/>
-
-    <PageBlockProjects class="mb-[80px] md:mb-[140px] border-b border-black "/>
+    <PageBlockProjects :projects="data.projects" class="mb-[80px] md:mb-[140px] border-b border-black "/>
 
     <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px]  border-b border-black "/>
     <PageBlockForm/>

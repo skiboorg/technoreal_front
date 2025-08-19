@@ -5,7 +5,7 @@
 <template>
 <section>
   <div class="container">
-    <BlockTitleWithSmallText class="md:max-w-[70%] md:mb-[190px]" small-text="Почему мы?"
+    <BlockTitleWithSmallText extra_class="md:max-w-[60%] md:mb-[60px]" small-text="Почему мы?"
                              big-text="Наша компания имеет современное производство с высокотехнологичным оборудованием"/>
     <div class="grid grid-cols-12 gap-6 mb-[60px]">
       <div class="col-span-12 md:col-start-7 md:col-end-10 ">

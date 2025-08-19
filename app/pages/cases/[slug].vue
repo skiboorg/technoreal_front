@@ -2,6 +2,12 @@
 const {$api} = useNuxtApp()
 const {slug} = useRoute().params
 const {data} = await useAsyncData(()=>$api.blank.project(slug))
+const config = useRuntimeConfig();
+
+useSeoMeta({
+  title: 'Портфолио Технореал – торговая мебель и реализованные проекты',
+  description: 'Портфолио реализованных проектов Технореал: торговые витрины, стеллажи, островные конструкции, мебель HoReCa и ресепшены.'
+})
 </script>
 
 <template>
@@ -76,8 +82,11 @@ const {data} = await useAsyncData(()=>$api.blank.project(slug))
       <BlockTitleWithSmallText  extra_class="mb-[70px]" small-text="Наши работы"
                                big-text="Другие проекты,<br> которые мы реализовали"/>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] md:pb-[120px]">
-        <CardNews/>
-        <CardNews/>
+        <CardNews  v-for="item in data.others"
+                   :name="item.name"
+                   :to="`/cases/${item.slug}`"
+                   :image="config.public.apiUrl+item.cover"/>
+
       </div>
 
     </div>

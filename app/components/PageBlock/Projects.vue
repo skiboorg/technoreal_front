@@ -1,23 +1,38 @@
 <script setup lang="ts">
-defineProps(['show_title'])
+const props = defineProps<{
+  show_title?: boolean
+  projects?: any[]
+}>()
+
 const {$api} = useNuxtApp()
 
-const {data} = useAsyncData(()=>$api.blank.projects(true))
+// Если show_title = true, грузим проекты с API
+const { data: loadedProjects } = await useAsyncData(
+    'projects',
+    () => $api.blank.projects(true),
+    { immediate: props.show_title }
+)
+
+// Источник данных для списка
+const projects = computed(() => {
+  return props.show_title ? loadedProjects.value : props.projects
+})
 </script>
 
 <template>
   <section>
     <div class="container">
-      <BlockSectionTitle v-if="show_title" title="Наши проекты"
-                         link_label = 'ПОСМОТРЕТЬ ВСЕ проекты'
-                         link_to = '/cases'/>
-      <CardProjectCard v-for="item in data" :item="item"  />
-
+      <BlockSectionTitle
+          v-if="show_title"
+          title="Наши проекты"
+          link_label="ПОСМОТРЕТЬ ВСЕ проекты"
+          link_to="/cases"
+      />
+      <CardProjectCard
+          v-for="item in projects"
+          :key="item.slug"
+          :item="item"
+      />
     </div>
-
   </section>
 </template>
-
-<style scoped>
-
-</style>

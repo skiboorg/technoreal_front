@@ -1,4 +1,25 @@
 <script setup lang="ts">
+const {$api} = useNuxtApp()
+const loading = ref(false)
+const send = ref(false)
+
+const formData = ref({
+  fio:null,
+  phone:null,
+  comment:null,
+  file:null,
+})
+
+const sendForm = async ()=>{
+  loading.value = true
+  await $api(`/api/user/cb`,{
+    method: 'POST',
+    body:formData.value,
+  })
+
+  loading.value = false
+  send.value = true
+}
 
 </script>
 
@@ -21,19 +42,19 @@
         <div class="grid grid-cols-12 gap-7">
           <div class="col-span-12">
             <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="value1" />
+              <InputText fluid id="over_label" v-model="formData.fio" />
               <label for="over_label">Ваше имя</label>
             </FloatLabel>
           </div>
           <div class="col-span-12">
             <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="value1" />
+              <InputText fluid id="over_label" v-model="formData.phone" />
               <label for="over_label">Номер телефона</label>
             </FloatLabel>
           </div>
           <div class="col-span-12">
             <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="value1" />
+              <InputText fluid id="over_label" v-model="formData.comment" />
               <label for="over_label">Расскажите про ваш проект</label>
             </FloatLabel>
           </div>

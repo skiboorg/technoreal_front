@@ -17,8 +17,7 @@ defineProps(['item'])
     </div>
   </div>
   <div class="grid grid-cols-4 gap-5 mb-10 md:mb-[100px]">
-    <img v-for="img in item.gallery_images" :src="img.image" alt="">
-
+    <img class="w-full h-auto object-cover" v-for="img in item.gallery_images1" :src="img.image" alt="">
   </div>
 </template>
 

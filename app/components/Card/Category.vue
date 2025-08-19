@@ -5,7 +5,7 @@ defineProps(['item'])
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-t border-black py-7">
     <div class="">
-      <img class="w-full h-[380px] md:h-[675px] object-cover" src="https://placehold.co/600x600.png" alt="">
+      <img class="w-full h-[380px] md:h-[675px] object-cover" :src="item.cover" alt="">
     </div>
     <div class="flex flex-col items-start justify-between">
       <div class="">

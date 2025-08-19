@@ -3,6 +3,11 @@ defineProps(['show_title'])
 const {$api} = useNuxtApp()
 
 const {data} = await useAsyncData(()=>$api.blank.projects())
+
+useSeoMeta({
+  title: 'Портфолио Технореал – торговая мебель и реализованные проекты',
+  description: 'Портфолио реализованных проектов Технореал: торговые витрины, стеллажи, островные конструкции, мебель HoReCa и ресепшены.'
+})
 </script>
 
 <template>

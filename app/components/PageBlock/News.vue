@@ -1,5 +1,7 @@
 <script setup lang="ts">
+const {$api} = useNuxtApp()
 
+const {data} = useAsyncData(()=>$api.blank.news(true))
 </script>
 
 <template>
@@ -11,10 +13,13 @@
           Новости
         </h2>
       </div>
-      <CardNews :is_news_item="true"/>
-      <CardNews :is_news_item="true"/>
-      <CardNews :is_news_item="true"/>
-      <CardNews :is_news_item="true"/>
+      <CardNews v-for="item in data" :name="item.name"
+                :image="item.cover"
+                :to="`/news/${item.slug}`"
+                :date="new Date(item.created).toLocaleDateString()"
+                :is_news_item="true"/>
+
+
 
     </div>
   </div>
