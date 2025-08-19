@@ -20,7 +20,7 @@ useSeoMeta({
                   :date="new Date(item.created).toLocaleDateString()"
                   :is_news_item="true"/>
       </div>
-      <PageBlockCbForm/>
+      <PageBlockForm/>
     </div>
   </section>
 </template>

@@ -80,7 +80,7 @@ const sendForm = async () => {
                     fluid
                     :value="formData.file ? formData.file.name : ''"
                 />
-                <label>Прикрепить смету</label>
+                <label v-if="!formData.file">Прикрепить смету</label>
               </FloatLabel>
               <label class="absolute right-0 top-[10px] border-b border-black cursor-pointer">
                 Выбрать файл
@@ -94,7 +94,7 @@ const sendForm = async () => {
                   :disabled="loading"
                   @click="sendForm"
               />
-              <p v-if="send" class="mt-4 text-green-600">✅ Форма успешно отправлена!</p>
+              <p v-if="send" class="mt-4 text-green-600">✅ Ваш запрос успешно отправлен! Мы с вами свяжемся в течении 24-48 часов для уточнения деталей.</p>
             </div>
           </div>
         </div>

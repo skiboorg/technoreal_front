@@ -38,7 +38,7 @@ const carouselConfig = {
 <template>
 <section>
   <div class="container">
-    <div class="flex flex-wrap items-start justify-between mb-[40px] md:mb-0">
+    <div class="flex md:flex-wrap items-start justify-between mb-[40px] md:mb-0">
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
                                big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>
       <div class="flex gap-2">
@@ -49,7 +49,7 @@ const carouselConfig = {
     <Carousel ref="carousel" v-bind="carouselConfig">
       <Slide v-for="i in data" class="flex flex-col items-start ">
         <div class="flex gap-7 items-center">
-          <img class="w-[88px] h-[88px] rounded-full object-cover" :src="i.client_photo" alt="">
+          <img class="w-[88px] h-[88px] rounded-full object-cover mb-8" :src="i.client_photo" alt="">
           <p class="manrope-font">{{i.client_name}}<br>
             <span class="font-bold">{{i.client_position}}</span>
           </p>

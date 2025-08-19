@@ -38,7 +38,7 @@ useSeoMeta({
     </div>
     <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_1" alt="">
     <div class="container">
-      <BlockTitleWithSmallText class="!max-w-[90%] mb-[100px]" small-text="Что было сделано"
+      <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[100px]" small-text="Что было сделано"
                                :big-text="data.heading"/>
 
       <div class="grid grid-cols-12 gap-6 mb-[80px] md:mb-[120px]">

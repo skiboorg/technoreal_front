@@ -122,7 +122,7 @@ useSeoMeta({
 
     </div>
 
-    <PageBlockCbForm/>
+    <PageBlockForm/>
 
 
 

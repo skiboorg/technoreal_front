@@ -17,7 +17,7 @@ useSeoMeta({
         <CardService v-for="(item,index) in data" :total="data.length" :item="item" :index="index"/>
 
       </div>
-      <PageBlockCbForm/>
+      <PageBlockForm/>
     </div>
   </section>
 

@@ -12,7 +12,7 @@ defineProps(['smallText','bigText','extra_class'])
 <!--  </div>-->
 <!--</template>-->
 <template>
-  <div class="hidden md:block ml-[30px] mt-[180px]  text-zinc-800 text-5xl font-semibold manrope-font leading-[48px]" :class='extra_class ? extra_class : "w-[60%]"'>
+  <div class="hidden md:block ml-[30px]   text-zinc-800 text-5xl font-semibold manrope-font leading-[48px]" :class='extra_class ? extra_class : "w-[60%]"'>
     <span class="text-neutral-400 text-sm align-top mr-[43px] relative top-[6px] " >
       {{smallText}}
     </span>
