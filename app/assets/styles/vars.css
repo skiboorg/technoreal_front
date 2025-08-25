@@ -5,6 +5,8 @@
     --p-button-border-radius: 7px !important;
     --p-button-font-size: 0.875rem;
     --p-button-label-font-weight:400 !important;
+    --p-button-primary-background:#EF7C00 !important;
+    --p-button-primary-border-color:#EF7C00 !important;
 
     /* Настройки полей ввода */
     --p-input-padding-y: 0.5rem;

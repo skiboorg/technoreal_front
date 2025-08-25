@@ -31,16 +31,17 @@ const carouselConfig = {
     </Carousel>
     <div class="block md:flex items-start gap-[275px] manrope-font">
       <!-- Маленький заголовок -->
-      <p class="mb-10 md:mb-0 text-[10px] text-gray-400 pt-1 whitespace-nowrap">Наши принципы</p>
+      <p class="mb-10 md:mb-0 text-sm text-gray-400 pt-1 whitespace-nowrap">Наши принципы</p>
 
       <div class="">
         <h2 class="text-[22px] md:text-[36px] sm:text-3xl md:text-4xl font-medium leading-tight mb-10">
-          Каждая рекламная конструкция—это лицо вашего бизнеса.Мы знаем, как сделать его запоминающимся. 17 лет в отрасли научили нас главному:реклама должна не просто быть—она должна работать.Поэтому в каждом проекте мы сочетаем креатив,точный расчет и современные технологии.
+          Каждая рекламная конструкция — это лицо вашего бизнеса. Мы знаем, как сделать его запоминающимся.<br>
+          17 лет в отрасли научили нас главному: реклама должна не просто быть — она должна работать. Поэтому в каждом проекте мы сочетаем креатив, точный расчет и современные технологии.
         </h2>
         <p class="text-[22px] md:text-[36px] sm:text-3xl md:text-4xl font-medium leading-tight mb-[70px] md:mb-20">
           Ваш успех начинается с первого впечатления. Давайте создадим его вместе!
         </p>
-        <div class="flex flex-wrap gap-10">
+        <div class="flex flex-wrap gap-20">
           <div class="flex gap-7 items-center">
             <img class="w-[88px] h-[88px] rounded-full object-cover" src="~assets/images/f1.png" alt="">
             <p class="manrope-font">Кайтазов Бахшиш<br>

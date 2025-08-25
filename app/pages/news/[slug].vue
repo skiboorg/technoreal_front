@@ -19,10 +19,9 @@ useSeoMeta({
             <p class="opacity-40">Опубликовано</p>
             <p >{{new Date(data.created).toLocaleDateString()}}</p>
           </div>
-          <div class="mb-10" v-html="data.content"></div>
-
+          <div class="mb-10 html-content" v-html="data.content"></div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img v-for="img in data.images" :src="img.image" alt="">
+            <img class="w-full" v-for="img in data.images" :src="img.image" alt="">
           </div>
         </div>
         <div class="col-span-12 md:col-span-2">

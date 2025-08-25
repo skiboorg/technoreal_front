@@ -73,18 +73,17 @@ useSeoMeta({
       </div>
     </div>
     <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_2" alt="">
+    <PageBlockForm/>
     <div class="container">
-
-
-      <PageBlockForm/>
       <BlockTitleWithSmallText  extra_class="mb-[70px]" small-text="Наши работы"
                                big-text="Другие проекты,<br> которые мы реализовали"/>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] md:pb-[120px]">
+
         <CardNews  v-for="item in data.others"
                    :name="item.name"
                    :to="`/cases/${item.slug}`"
+                   :services="item.services"
                    :image="config.public.apiUrl+item.cover"/>
-
       </div>
 
     </div>
