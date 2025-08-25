@@ -49,7 +49,7 @@ const carouselConfig = {
           </div>
           <div class="flex gap-7 items-center">
             <img class="w-[88px] h-[88px] rounded-full object-cover" src="~assets/images/f2.png" alt="">
-            <p class="manrope-font">Кайтазова Екатерина<br>
+            <p class="manrope-font">Кайтазова Анастасия<br>
               <span class="font-bold">CEO  Технореал</span>
             </p>
           </div>

@@ -8,12 +8,12 @@ defineProps(['item','index','total'])
     <img class="w-full h-[360px]" :src="item.cover" alt="">
   </div>
   <div class="flex flex-col items-start justify-between">
-    <div class="grid grid-cols-12 mb-[45px]">
+    <div class="grid grid-cols-12 items-center mb-[45px] w-full">
       <div class="col-span-10">
         <p class="text-[28px] leading-[100%] tracking-[-1px]">{{item.name}}</p>
       </div>
       <div class="col-span-2 justify-self-end">
-        <p><span>{{index+1}}</span> <span class="opacity-40">/ {{total}}</span></p>
+        <p ><span>{{index+1}}</span> <span class="opacity-40">/ {{total}}</span></p>
       </div>
     </div>
     <p class="opacity-40 mb-4">Описание</p>

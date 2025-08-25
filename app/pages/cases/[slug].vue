@@ -17,26 +17,24 @@ useSeoMeta({
 <!--    </pre>-->
     <div class="container">
       <BlockSectionTitle class="md:!mb-[115px]" :title="data.name"/>
-      <div class="border-t border-black grid py-8 grid-cols-1 md:grid-cols-2 items-center">
+      <div class="border-t border-black grid py-4 grid-cols-1 md:grid-cols-2 items-center">
 
-        <div class="border-b md:border-r md:border-b-0 border-black grid grid-cols-12  gap-[15px] md:gap-0  pb-[26px] md:pb-0">
+        <div class="border-b  md:border-b-0 border-black grid grid-cols-12  gap-[15px] md:gap-0  pb-[26px] md:pb-0">
           <div class="col-span-12 md:col-span-2">
             <p class="font-light">Услуга</p>
           </div>
           <div class="col-span-12 md:col-span-10 flex flex-col items-start gap-2">
             <p class="fon-bold" v-for="item in data.services">/{{item.name}} </p>
-
           </div>
-
-
         </div>
-        <div class="md:pl-[70px] pt-[26px] md:pt-0">
+        <div class="md:pl-[70px] md:border-l border-black py-4">
           <p class="opacity-40 mb-4">Задача</p>
           <p class="max-w-full md:max-w-[70%]">{{data.task}}</p>
         </div>
       </div>
     </div>
-    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_1" alt="">
+
+    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px] md:mt-4 md:mb-32" :src="data.large_photo_1" alt="">
     <div class="container">
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[100px]" small-text="Что было сделано"
                                :big-text="data.heading"/>

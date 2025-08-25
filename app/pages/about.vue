@@ -31,7 +31,7 @@ useSeoMeta({
         </div>
       </div>
     </div>
-    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px] md:mb-[120px]" src="~assets/images/offer.png" alt="">
+    <img class="w-full h-[800px] md:h-auto object-cover mb-[80px] md:mb-[120px]" src="~assets/images/about1.jpg" alt="">
 
       <div class="container mb-[80px] md:!mb-[140px]">
         <BlockTitleWithSmallText class="  md:mb-[130px]" extra_class= 'md:max-w-[70%] md:mb-[130px]' small-text="О нас"
@@ -54,7 +54,7 @@ useSeoMeta({
           <div class="col-span-10 text-[18px] md:text-[30px] font-medium">Индивидуальный подход к задачам любого масштаба</div>
         </div>
       </div>
-    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px] md:mb-[140px]" src="~assets/images/offer.png" alt="">
+    <img class="w-full h-[460px] md:h-auto object-cover mb-[80px] md:mb-[140px]" src="~assets/images/about2.jpg" alt="">
 
     <div class="container">
       <BlockTitleWithSmallText class="  md:mb-[110px]" extra_class= 'md:max-w-[65%] md:mb-[110px]' small-text="Миссия"
