@@ -12,7 +12,7 @@
         <div class="">
             <p class="opacity-50 mb-[30px]">СВЯЗАТЬСЯ С НАМИ</p>
             <p class="text-[22px] mb-[15px]"><a href="tel:89685458877 ">+7 (968) 545-88-77 </a></p>
-            <p class="text-[22px] mb-[50px] md:mb-[110px]"> <a href="mailto:info@tehnorel.com">info@tehnorel.com</a></p>
+            <p class="text-[22px] mb-[50px] md:mb-[110px]"> <a href="mailto:info@texnoreal.com">info@texnoreal.com</a></p>
             <p class="hidden md:block opacity-50 mb-[5px] font-light">Политика конфиденциальности</p>
             <p class="hidden md:block opacity-50 font-light">Разработка сайта</p>
         </div>
