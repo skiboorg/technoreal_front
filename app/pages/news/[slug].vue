@@ -12,9 +12,9 @@ useSeoMeta({
   <section>
     <div class="container">
 
-      <div class="grid grid-cols-12">
-        <div class="col-span-12 md:col-span-10">
-          <h3 class="text-[22px] md:text-[48px] manrope-font leading-[100%] max-w-full md:max-w-[70%] mb-4 md:mb-7">{{data.name}}</h3>
+      <div class="grid grid-cols-12 gap-10">
+        <div class="col-span-12 md:col-span-8 ">
+          <h3 class="text-[22px] md:text-[48px] manrope-font leading-[100%]  mb-4 md:mb-7">{{data.name}}</h3>
           <div class="border-l border-black py-2 px-3 mb-4 md:mb-14">
             <p class="opacity-40">Опубликовано</p>
             <p >{{new Date(data.created).toLocaleDateString()}}</p>
@@ -24,7 +24,7 @@ useSeoMeta({
             <img class="w-full" v-for="img in data.images" :src="img.image" alt="">
           </div>
         </div>
-        <div class="col-span-12 md:col-span-2">
+        <div class="col-span-12 md:col-start-10 md:col-end-13">
           <div class="border-b border-black mb-5 pb-5">
             <p class="mb-7">Смотрите также:</p>
             <div class="mb-4" v-for="item in data.others">

@@ -7,8 +7,8 @@ const carousel = ref()
 const carouselConfig = {
   itemsToShow: 4,
   wrapAround: false,
-  gap:20,
-  autoplay: 3000,
+  gap:60,
+  //autoplay: 3000,
   pauseAutoplayOnHover: true,
   //slideEffect:'fade'
   breakpoints:{
@@ -22,13 +22,13 @@ const carouselConfig = {
     1024: {
       itemsToShow: 3,
       //snapAlign: 'center',
-      gap: 0,
+      gap: 20,
 
     },
     1300: {
       itemsToShow: 4,
       snapAlign:'start',
-      gap: 0,
+      gap: 40,
 
     },
   }
@@ -47,14 +47,14 @@ const carouselConfig = {
       </div>
     </div>
     <Carousel ref="carousel" v-bind="carouselConfig">
-      <Slide v-for="i in data" class="flex flex-col items-start ">
-        <div class="flex gap-7 items-center">
-          <img class="w-[88px] h-[88px] rounded-full object-cover mb-8" :src="i.client_photo" alt="">
+      <Slide v-for="i in data" class="flex flex-col items-start justify-start">
+        <div class="flex gap-7 items-center mb-9">
+          <img class="w-[88px] h-[88px] rounded-full object-cover " :src="i.client_photo" alt="">
           <p class="manrope-font">{{i.client_name}}<br>
             <span class="font-bold">{{i.client_position}}</span>
           </p>
         </div>
-        <p>{{i.text}}</p>
+        <p v-html="i.text"></p>
       </Slide>
 
 

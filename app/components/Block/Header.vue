@@ -4,7 +4,7 @@ const links = [
   {label:'Услуги',to:'/services'},
   {label:'Новости',to:'/news'},
   {label:'Наши проекты',to:'/cases'},
-  {label:'Контакты',to:'/'},
+  {label:'Контакты',to:'/contacts'},
 ]
 const menuActive = ref(false)
 const route = useRoute()
@@ -18,8 +18,8 @@ watch(
 </script>
 
 <template>
-<header>
-  <div class="container md:!mb-[96px]">
+<header class="mb-5 md:mb-[96px]">
+  <div class="container ">
     <div class="flex items-center justify-between py-5">
       <nuxt-link class="flex items-end" to="/">
         <svg width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -25,7 +25,7 @@ const sendForm = async ()=>{
 
 <template>
 <section>
-  <div class="container">
+  <div class="container border-b border-black">
 
 <p class="text-[36px] md:text-[80px] manrope-font leading-[100%] mb-[50px] md:mb-0  relative max-w-[255px] md:max-w-[355px]">Обсудить
   проект
@@ -37,35 +37,12 @@ const sendForm = async ()=>{
   </svg>
 
 </p>
-    <div class="grid grid-cols-12 pb-[80px] md:pb-[160px] border-b border-black">
-      <div class="col-start-1 col-end-13 md:col-start-7 md:col-end-13">
-        <div class="grid grid-cols-12 gap-7">
-          <div class="col-span-12">
-            <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="formData.fio" />
-              <label for="over_label">Ваше имя</label>
-            </FloatLabel>
-          </div>
-          <div class="col-span-12">
-            <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="formData.phone" />
-              <label for="over_label">Номер телефона</label>
-            </FloatLabel>
-          </div>
-          <div class="col-span-12">
-            <FloatLabel variant="on">
-              <InputText fluid id="over_label" v-model="formData.comment" />
-              <label for="over_label">Расскажите про ваш проект</label>
-            </FloatLabel>
-          </div>
-
-          <div class="col-span-12">
-            <Button severity="contrast" fluid label="Рассчитать стоимость"/>
-          </div>
-        </div>
-      </div>
+    <div class="md:max-w-[50%] ml-auto pb-[80px] md:pb-[160px] ">
+      <BlockForm/>
     </div>
+
   </div>
+
 </section>
 </template>
 

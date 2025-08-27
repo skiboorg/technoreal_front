@@ -20,7 +20,7 @@ useSeoMeta({
 
 
       </div>
-      <PageBlockForm/>
+      <PageBlockCbForm/>
     </div>
   </section>
 

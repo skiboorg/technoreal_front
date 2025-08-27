@@ -21,7 +21,7 @@ const projects = computed(() => {
 
 <template>
   <section>
-    <div class="container">
+
       <BlockSectionTitle
           v-if="show_title"
           title="Наши проекты"
@@ -33,6 +33,6 @@ const projects = computed(() => {
           :key="item.slug"
           :item="item"
       />
-    </div>
+
   </section>
 </template>

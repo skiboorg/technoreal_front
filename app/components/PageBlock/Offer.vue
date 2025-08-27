@@ -11,7 +11,7 @@
 
     </p>
 
-    <UILinkWithArrow  class="md:absolute bottom-[5px] mb-[50px] md:mb-0 right-[40px] indent-0" label="ОБСУДИТЬ ПРОЕКТ" to="/"/>
+    <UILinkWithArrow  class="md:absolute bottom-[5px] mb-[50px] md:mb-0 right-[40px] indent-0" label="ОБСУДИТЬ ПРОЕКТ" to="/contacts"/>
   </div>
 
   <img class="w-full mb-[80px] md:mb-32 h-[500px] md:h-[auto] object-cover" src="~assets/images/offer.png" alt="">

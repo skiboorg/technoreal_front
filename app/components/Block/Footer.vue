@@ -6,7 +6,10 @@
   <div class="container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] pt-10 md:pt-[80px] pb-[26px] md:gap-0 items-end">
       <div class="hidden md:block">
-        <Button class="px-[44px]" label="Обсудить проект"/>
+        <nuxt-link to="/contacts">
+          <Button class="px-[44px]" label="Обсудить проект"/>
+        </nuxt-link>
+
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="">
@@ -25,7 +28,10 @@
         </div>
 
         <div class="block md:hidden">
-          <Button class="mb-[50px]" label="Обсудить проект"/>
+          <nuxt-link to="/contacts">
+            <Button class="mb-[50px]" label="Обсудить проект"/>
+          </nuxt-link>
+
           <p class="opacity-50 mb-[5px] font-light">Политика конфиденциальности</p>
           <p class="mb-[50px] opacity-50 font-light">Разработка сайта</p>
           <p class="opacity-50 font-light">© 2008 - {{new Date().getFullYear()}} Технореал</p>
