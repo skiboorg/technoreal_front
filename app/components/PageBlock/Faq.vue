@@ -16,7 +16,7 @@ const faqs = [
 <template>
 <section>
   <div class="container">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-0">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-0  pb-[80px] md:pb-[140px] border-b border-black">
       <div class=""><h3 class="text-[36px] md:text-[80px] manrope-font leading-[100%]">Часто задаваемые вопросы</h3></div>
       <div class="">
         <Accordion expandIcon="pi pi-plus" collapseIcon="pi pi-minus">

@@ -4,7 +4,7 @@
 
 <template>
   <section>
-    <div class="container">
+    <div class="">
       <BlockTitleWithSmallText
           extra_class="md:!max-w-[60%] mb-[60px] md:mb-[150px]"
           small-text="Пересчитаем смету"

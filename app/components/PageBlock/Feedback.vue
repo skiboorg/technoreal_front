@@ -37,7 +37,7 @@ const carouselConfig = {
 
 <template>
 <section>
-  <div class="container">
+  <div class="">
     <div class="flex md:flex-wrap items-start justify-between mb-[40px] md:mb-0">
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
                                big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>

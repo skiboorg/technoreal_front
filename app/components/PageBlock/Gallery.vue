@@ -13,7 +13,7 @@ const carouselConfig = {
 
 <template>
   <section>
-    <div class="container">
+    <div class="">
       <div class="flex flex-wrap items-start justify-between mb-[30px] md:mb-0">
         <BlockSectionTitle title="Галерея проектов"/>
         <div class="flex gap-2">

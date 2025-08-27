@@ -12,14 +12,19 @@ useSeoMeta({
 </script>
 <template>
   <PageBlockOffer class="mb-[140px] md:mb-[140px]"/>
-  <PageBlockServices class="mb-[80px] md:mb-[180px]"/>
+  <div class="container  mb-[80px] md:mb-[180px]">
+    <PageBlockServices class="border-b border-black"/>
+  </div>
+
   <PageBlockWhyWe class="mb-[80px] md:mb-[100px]"/>
   <div class="container">
     <PageBlockProjects :show_title="true" class="mb-[80px] md:mb-[140px]"/>
   </div>
+  <div class="container">
+    <PageBlockForm id="#form" class="mb-[80px] md:mb-[100px]"/>
+  </div>
 
-  <PageBlockForm id="#form" class="mb-[80px] md:mb-[100px]"/>
   <PageBlockProjectGallery class="mb-[80px] md:mb-[140px]  "/>
-  <PageBlockNews class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px] border-b border-black"/>
-  <PageBlockFaq class=" pb-[80px] md:pb-[140px] border-b border-black"/>
+  <PageBlockNews class=" "/>
+  <PageBlockFaq class=""/>
 </template>

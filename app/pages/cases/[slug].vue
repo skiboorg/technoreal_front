@@ -73,7 +73,10 @@ useSeoMeta({
       </div>
     </div>
     <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_2" alt="">
-    <PageBlockForm/>
+    <div class="container">
+      <PageBlockForm/>
+    </div>
+
     <div class="container">
       <BlockTitleWithSmallText  extra_class="mb-[70px]" small-text="Наши работы"
                                big-text="Другие проекты,<br> которые мы реализовали"/>

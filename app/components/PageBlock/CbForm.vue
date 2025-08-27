@@ -25,7 +25,7 @@ const sendForm = async ()=>{
 
 <template>
 <section>
-  <div class="container border-b border-black">
+  <div class=" border-b border-black">
 
 <p class="text-[36px] md:text-[80px] manrope-font leading-[100%] mb-[50px] md:mb-0  relative max-w-[255px] md:max-w-[355px]">Обсудить
   проект

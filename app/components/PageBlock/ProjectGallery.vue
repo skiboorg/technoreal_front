@@ -14,8 +14,8 @@ const carouselConfig = {
 
 <template>
 <section>
-  <div class="container pb-[80px] md:!pb-[140px] border-b border-black">
-    <div class="flex flex-wrap items-end justify-between mb-[30px] md:mb-[70px] gap-10 md:gap-0">
+  <div class="container  ">
+    <div class="flex flex-wrap items-end justify-between mb-[30px] md:mb-[70px] gap-10 md:gap-0 ">
       <h3 class="text-[36px] md:text-[80px] manrope-font leading-[100%]">Галерея проектов</h3>
       <div class="flex gap-2">
         <Button @click="slider.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
@@ -29,7 +29,7 @@ const carouselConfig = {
 
       </Slide>
     </Carousel>
-    <div class="block md:flex items-start gap-[275px] manrope-font">
+    <div class="block md:flex items-start gap-[275px] manrope-font border-b border-black pb-[80px] md:!pb-[140px]">
       <!-- Маленький заголовок -->
       <p class="mb-10 md:mb-0 text-sm text-gray-400 pt-1 whitespace-nowrap">Наши принципы</p>
 
