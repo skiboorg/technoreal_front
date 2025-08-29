@@ -24,8 +24,11 @@ useSeoMeta({
         <UILinkWithArrow label="ОБСУДИТЬ ПРОЕКТ" to="/"/>
       </div>
     </div>
-    <img class="w-full mb-[80px] md:mb-32" :src="data.large_photo" alt="">
-    <BlockTitleWithSmallText  extra_class="max-w-[70%] mb-[60px] md:mb-[100px]" small-text="Об услуге"
+  </div>
+
+    <img class="w-full h-[500px] md:h-auto mb-[80px] object-cover md:mb-32" :src="data.large_photo" alt="">
+  <div class="container">
+  <BlockTitleWithSmallText  extra_class="max-w-[70%] mb-[60px] md:mb-[100px]" small-text="Об услуге"
                              :big-text="data.heading_1"/>
     <div class="grid grid-cols-12 gap-6 mb-[120px] md:mb-[220px]">
       <div class="col-start-1 col-end-13 md:col-start-7 md:col-end-10 ">

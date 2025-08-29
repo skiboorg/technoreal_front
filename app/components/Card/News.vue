@@ -5,14 +5,14 @@ defineProps(['image','name', 'date', 'is_news_item', 'to','services'])
 <template>
   <div class="">
 
-    <div class="mb-6 pb-4" :class="is_news_item ? 'border-b border-black' : ''" >
+    <div class="mb-2 md:mb-6 pb-4" :class="is_news_item ? 'border-b border-black' : ''" >
       <img class="w-full " :class="is_news_item ? '' : 'h-auto md:h-[350px] object-cover'" :src="image" alt="">
     </div>
     <div class="grid grid-cols-12">
       <div class="col-start-1 col-end-9">
-        <p>{{name}}</p>
+        <p >{{name}}</p>
         <div v-if="!is_news_item">
-          <p class="opacity-40" v-for="item in services">/{{item.name}}</p>
+          <p class="opacity-40 " v-for="item in services">/{{item.name}}</p>
         </div>
 
       </div>

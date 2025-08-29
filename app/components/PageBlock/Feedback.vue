@@ -38,10 +38,10 @@ const carouselConfig = {
 <template>
 <section>
   <div class="">
-    <div class="flex md:flex-wrap items-start justify-between mb-[40px] md:mb-0">
+    <div class="flex flex-wrap items-start justify-between mb-[40px] md:mb-0 relative">
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
                                big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>
-      <div class="flex gap-2">
+      <div class="absolute md:relative bottom-0 flex gap-2">
         <Button @click="carousel.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
         <Button @click="carousel.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующие отзывы"/>
       </div>

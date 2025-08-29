@@ -41,7 +41,7 @@ const carouselConfig = {
         <p class="text-[22px] md:text-[36px] sm:text-3xl md:text-4xl font-medium leading-tight mb-[70px] md:mb-20">
           Ваш успех начинается с первого впечатления. Давайте создадим его вместе!
         </p>
-        <div class="flex flex-wrap gap-20">
+        <div class="flex flex-wrap gap-5 md:gap-20">
           <div class="flex gap-7 items-center">
             <img class="w-[88px] h-[88px] rounded-full object-cover" src="~assets/images/f1.png" alt="">
             <p class="manrope-font">Кайтазов Бахшиш<br>

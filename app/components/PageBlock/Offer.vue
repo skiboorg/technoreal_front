@@ -16,7 +16,7 @@
 
   <img class="w-full mb-[80px] md:mb-32 h-[500px] md:h-[auto] object-cover" src="~assets/images/offer.png" alt="">
   <div class="container">
-    <BlockTitleWithSmallText  extra_class="md:max-w-[60%] md:mb-[100px]" small-text="О нас" big-text="Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование"/>
+    <BlockTitleWithSmallText  extra_class="md:max-w-[60%] md:mb-[140px]" small-text="О нас" big-text="Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование"/>
     <div class="grid grid-cols-12 gap-6">
       <div class="col-span-12 md:col-start-7 md:col-end-10 ">
         <p class="manrope-font text-[26px] md:text-5xl font-semibold border-b border-black mb-[15px] pb-[25px]">5 000</p>

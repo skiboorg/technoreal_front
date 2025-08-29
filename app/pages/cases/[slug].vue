@@ -33,7 +33,6 @@ useSeoMeta({
         </div>
       </div>
     </div>
-
     <img class="w-full h-[500px] md:h-auto object-cover mb-[80px] md:mt-4 md:mb-32" :src="data.large_photo_1" alt="">
     <div class="container">
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[100px]" small-text="Что было сделано"
@@ -72,27 +71,22 @@ useSeoMeta({
         </div>
       </div>
     </div>
-    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_2" alt="">
+    <img class="w-full h-[500px] md:h-auto object-cover mb-[80px]  md:mb-32" :src="data.large_photo_3" alt="">
     <div class="container">
       <PageBlockForm/>
     </div>
-
     <div class="container">
-      <BlockTitleWithSmallText  extra_class="mb-[70px]" small-text="Наши работы"
+      <BlockTitleWithSmallText  extra_class="!mb-[40px] md:mb-[70px]"
+                                small-text="Наши работы"
                                big-text="Другие проекты,<br> которые мы реализовали"/>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] md:pb-[120px]">
 
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] md:pb-[120px]">
         <CardNews  v-for="item in data.others"
                    :name="item.name"
                    :to="`/cases/${item.slug}`"
                    :services="item.services"
                    :image="config.public.apiUrl+item.cover"/>
       </div>
-
     </div>
   </section>
 </template>
-
-<style scoped>
-
-</style>

@@ -17,19 +17,17 @@ defineProps(['smallText','bigText','extra_class'])
       {{smallText}}
     </span>
     <span v-html="bigText"></span>
-
   </div>
   <div
       class="
       block md:hidden
       w-full
-      mb-[80px]
+      mb-[40px]
       text-zinc-800 text-[22px]  font-semibold manrope-font leading-[22px] "
       :class='extra_class'>
     <span class="text-neutral-400 text-sm align-top mr-[43px] relative top-[6px] " >
       {{smallText}}
     </span>
-
     <span class=" block mt-10  " v-html="bigText"></span>
   </div>
 </template>
