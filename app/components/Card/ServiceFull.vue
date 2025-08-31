@@ -1,5 +1,7 @@
 <script setup lang="ts">
 defineProps(['item','index','show_btn'])
+const config = useRuntimeConfig();
+
 </script>
 
 <template>
@@ -8,7 +10,7 @@ defineProps(['item','index','show_btn'])
   <div class="col-span-12 md:col-span-5 text-[22px] md:text-[36px] leading-[100%]" >{{item.name}}</div>
   <div class="col-span-12 md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-7">
     <div class="order-1 md:order-0">
-      <img :src="item.cover" alt="">
+      <img class="" :src="config.public.apiUrl+item.cover" alt="">
     </div>
     <div class="order-0 md:order-1 flex flex-col items-start justify-between gap-[30px] md:gap-0">
       <p class="text-gray-500">{{item.short_description}}</p>

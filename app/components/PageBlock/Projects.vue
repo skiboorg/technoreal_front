@@ -25,7 +25,7 @@ const projects = computed(() => {
       <BlockSectionTitle
           v-if="show_title"
           title="Наши проекты"
-          link_label="ПОСМОТРЕТЬ ВСЕ проекты"
+          link_label="ВСЕ проекты"
           link_to="/cases"
       />
       <CardProjectCard

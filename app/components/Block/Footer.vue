@@ -16,8 +16,8 @@
             <p class="opacity-50 mb-[30px]">СВЯЗАТЬСЯ С НАМИ</p>
             <p class="text-[22px] mb-[15px]"><a href="tel:89685458877 ">+7 (968) 545-88-77 </a></p>
             <p class="text-[22px] mb-[50px] md:mb-[110px]"> <a href="mailto:info@texnoreal.com">info@texnoreal.com</a></p>
-            <p class="hidden md:block opacity-50 mb-[5px] font-light">Политика конфиденциальности</p>
-            <p class="hidden md:block opacity-50 font-light">Разработка сайта</p>
+            <a href="/policy.pdf" target="_blank" class="hidden md:block opacity-50 mb-[5px] font-light">Политика конфиденциальности</a>
+            <a href="https://t.me/vkryaz" target="_blank" class="hidden md:block opacity-50 font-light">Разработка сайта</a>
         </div>
         <div class="">
           <p class="opacity-50 mb-[30px]">АДРЕС</p>
@@ -32,8 +32,8 @@
             <Button class="mb-[50px]" label="Обсудить проект"/>
           </nuxt-link>
 
-          <p class="opacity-50 mb-[5px] font-light">Политика конфиденциальности</p>
-          <p class="mb-[50px] opacity-50 font-light">Разработка сайта</p>
+          <a href="/policy.pdf" target="_blank" class="block opacity-50 mb-[5px] font-light">Политика конфиденциальности</a>
+          <a href="https://t.me/vkryaz" target="_blank" class="block opacity-50 mb-[5px] font-light">Разработка сайта</a>
           <p class="opacity-50 font-light">© 2008 - {{new Date().getFullYear()}} Технореал</p>
         </div>
 

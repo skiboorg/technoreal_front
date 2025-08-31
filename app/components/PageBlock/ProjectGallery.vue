@@ -1,9 +1,19 @@
 <script setup lang="ts">
 import {Carousel, Pagination, Slide} from "vue3-carousel";
 const slider = ref()
+
+const images = [
+    '/index_slider/1.png',
+    '/index_slider/2.png',
+    '/index_slider/3.png',
+    '/index_slider/4.png',
+    '/index_slider/5.png',
+    '/index_slider/6.png',
+    '/index_slider/7.png',
+]
 const carouselConfig = {
   itemsToShow: 1,
-  wrapAround: false,
+  wrapAround: true,
   gap:20,
   //autoplay: 3000,
   pauseAutoplayOnHover: true,
@@ -24,8 +34,8 @@ const carouselConfig = {
     </div>
 
     <Carousel ref="slider"  v-bind="carouselConfig">
-      <Slide v-for="i in 10" class="flex flex-col items-start ">
-        <img class="w-full mb-[80px] md:mb-[120px] h-[500px] md:h-auto object-cover" src="~assets/images/why_we.png" alt="">
+      <Slide v-for="i in images" class="flex flex-col items-start ">
+        <img class="w-full mb-[80px] md:mb-[120px] h-[500px] md:h-auto object-cover" :src="i" alt="">
 
       </Slide>
     </Carousel>
@@ -45,13 +55,13 @@ const carouselConfig = {
           <div class="flex gap-7 items-center">
             <img class="w-[88px] h-[88px] rounded-full object-cover" src="~assets/images/f1.png" alt="">
             <p class="manrope-font">Кайтазов Бахшиш<br>
-              <span class="font-bold">CEO  Технореал</span>
+              <span class="font-bold">Основатель компании</span>
             </p>
           </div>
           <div class="flex gap-7 items-center">
             <img class="w-[88px] h-[88px] rounded-full object-cover" src="~assets/images/f2.png" alt="">
             <p class="manrope-font">Кайтазова Анастасия<br>
-              <span class="font-bold">CEO  Технореал</span>
+              <span class="font-bold">Генеральный директор</span>
             </p>
           </div>
         </div>

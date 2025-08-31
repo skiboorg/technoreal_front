@@ -70,16 +70,13 @@ useSeoMeta({
         </p>
       </div>
     </div>
-
     <img class="w-full h-[500px] md:h-full object-cover mb-[80px] md:mb-32" :src="data.large_photo_1" alt="">
-    <BlockTitleWithSmallText  extra_class="max-w-[50%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
+    <BlockTitleWithSmallText  extra_class="max-w-[75%] md:max-w-[50%] !mb-[30px] md:mb-[40px]" small-text="Наши работы"
                              big-text="Проекты, которые мы реализовали"/>
     <PageBlockProjects :projects="data.projects" class="mb-[80px] md:mb-[140px] border-b border-black "/>
-
     <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px]  border-b border-black "/>
     <PageBlockForm/>
     <PageBlockGallery :items="data.images" class="mb-[0px] md:mb-[140px] py-[0px] pb-[80px]  md:py-[140px]  border-b border-black "/>
-
   </div>
 </section>
 </template>

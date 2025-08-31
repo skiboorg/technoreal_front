@@ -24,11 +24,11 @@ defineProps(['item'])
   </div>
 
     <img v-if="item.gallery_images1" class="block md:hidden w-full h-auto object-cover mb-10"
-       :src="item.gallery_images1[0].image"
+       :src="item.gallery_images1[0]?.image"
          alt=""
     >
   <img v-else class="block md:hidden w-full h-auto object-cover mb-10"
-       :src="item.gallery_images[0].image"
+       :src="item.gallery_images[0]?.image"
        alt=""
   >
 

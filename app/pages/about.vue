@@ -121,8 +121,10 @@ useSeoMeta({
       </div>
 
     </div>
+    <div class="container">
+      <PageBlockForm/>
+    </div>
 
-    <PageBlockForm/>
 
 
 

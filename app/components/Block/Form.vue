@@ -70,7 +70,7 @@ const sendForm = async () => {
             fluid
             :value="formData.file ? formData.file.name : ''"
         />
-        <label v-if="!formData.file">*Прикрепить файл<br class="block md:hidden"> проекта или смету</label>
+        <label class="!leading-[120%]" v-if="!formData.file">*Прикрепить файл<br class="block md:hidden"> проекта или смету</label>
       </FloatLabel>
       <label class="absolute right-0 top-[10px] border-b border-black cursor-pointer">
         Выбрать файл

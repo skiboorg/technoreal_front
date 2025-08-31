@@ -1,16 +1,34 @@
 <script setup lang="ts">
 defineProps(['item','index','total'])
+import {Carousel, Pagination, Slide} from "vue3-carousel";
+
+const carousel1 = ref()
+const carouselConfig = {
+  itemsToShow: 1,
+  wrapAround: true,
+  //autoplay: 3000,
+  pauseAutoplayOnHover: true,
+  //slideEffect:'fade'
+}
+// const config = useRuntimeConfig();
+// config.public.apiUrl
 </script>
 
 <template>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-t border-black pt-7">
   <div class="">
-    <img class="w-full h-[360px]" :src="item.cover" alt="">
+    <Carousel ref="carousel1" v-bind="carouselConfig">
+      <Slide v-for="i in item.slider_images" >
+        <img class="w-full h-[360px] object-cover" :src="i.image" alt="">
+      </Slide>
+      <template ></template>
+    </Carousel>
+<!--    <img class="w-full h-[360px]" :src="item.cover" alt="">-->
   </div>
   <div class="flex flex-col items-start justify-between">
-    <div class="grid grid-cols-12 items-center mb-[45px] w-full">
+    <div class="grid grid-cols-12 items-start mb-[45px] w-full">
       <div class="col-span-10">
-        <p class="text-[28px] leading-[100%] tracking-[-1px]">{{item.name}}</p>
+        <p class="text-[26px] leading-[100%] tracking-[-1px]">{{item.name}}</p>
       </div>
       <div class="col-span-2 justify-self-end">
         <p ><span>{{index+1}}</span> <span class="opacity-40">/ {{total}}</span></p>
