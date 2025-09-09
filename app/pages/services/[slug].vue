@@ -33,13 +33,13 @@ useSeoMeta({
     <div class="grid grid-cols-12 gap-6 mb-[120px] md:mb-[220px]">
       <div class="col-start-1 col-end-13 md:col-start-7 md:col-end-10 ">
         <p class=" text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
-          Для кого подходит
+          {{data.target_audience_title}}
         </p>
         <p class="text-gray-500">{{data.target_audience}}</p>
       </div>
       <div class="col-start-1 col-end-13 md:col-start-10 md:col-end-13 ">
         <p class="text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
-          Рекомендация
+          {{data.recommendation_title}}
         </p>
         <p class="text-gray-500">{{data.recommendation}}</p>
       </div>
@@ -48,7 +48,6 @@ useSeoMeta({
                                :big-text="data.heading_implementation"/>
       <div class="border-b border-black mb-[80px] md:mb-[140px]">
         <CardCategory v-for="item in data.variants" :item="item"/>
-
       </div>
     <BlockTitleWithSmallText class="max-w-[70%] " extra_class="mb-[60px]  md:mb-[80px]" small-text="Почему мы?"
                              big-text="Воплощаем нестандартные идеи в функциональное торговое оборудование"/>

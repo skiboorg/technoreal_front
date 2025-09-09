@@ -15,14 +15,14 @@ module.exports = {
                 sm: '20px',
                 md: '24px',
                 lg: '30px',
-                xl: '40px',
-                '2xl': '20'
+                xl: '20px',
+                '2xl': '20px'
             },
             screens: {
                 sm: '640px',
                 md: '768px',
                 lg: '1024px',
-                xl: '1240px',
+                xl: '1340px',
                 '2xl': '1420px'
             }
         },
