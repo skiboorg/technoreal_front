@@ -23,7 +23,7 @@ const carouselConfig = {
       </div>
       <Carousel ref="carousel1" v-bind="carouselConfig">
         <Slide v-for="i in items" >
-          <img class="w-full h-[500px] md:h-full object-cover" :src="i.image" alt="">
+          <img class="w-full h-[340px] md:h-full object-cover" :src="i.image" alt="">
         </Slide>
       </Carousel>
 

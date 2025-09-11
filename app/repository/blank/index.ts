@@ -8,6 +8,9 @@ export function createBlankRepository(appFetch: typeof $fetch){
         reviews(){
                 return appFetch(`/api/data/client-reviews`);
         },
+        home_gallery(){
+            return appFetch(`/api/data/home_gallery`);
+        },
         service(slug){
                 return appFetch(`/api/data/services/${slug}/`);
         },

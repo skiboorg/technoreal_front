@@ -6,9 +6,9 @@
   <div class="container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] pt-10 md:pt-[80px] pb-[26px] md:gap-0 items-end">
       <div class="hidden md:block">
-        <nuxt-link to="/contacts">
+        <a href="/contacts#form">
           <Button class="px-[44px]" label="Обсудить проект"/>
-        </nuxt-link>
+        </a>
 
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2">
@@ -28,9 +28,9 @@
         </div>
 
         <div class="block md:hidden">
-          <nuxt-link to="/contacts">
+          <a href="/contacts#form">
             <Button class="mb-[50px]" label="Обсудить проект"/>
-          </nuxt-link>
+          </a>
 
           <a href="/policy.pdf" target="_blank" class="block opacity-50 mb-[5px] font-light">Политика конфиденциальности</a>
           <a href="https://t.me/vkryaz" target="_blank" class="block opacity-50 mb-[5px] font-light">Разработка сайта</a>

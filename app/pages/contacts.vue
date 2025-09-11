@@ -1,5 +1,26 @@
 <script setup lang="ts">
+const route = useRoute()
 
+
+async function scrollToHash(hash: string | null) {
+  if (!hash) return
+  await nextTick() // дать Vue рендернуть текущий компонент
+  // быстрый ретрай (если элемент рендерится чуть позже)
+  for (let i = 0; i < 10; i++) {
+    const el = document.querySelector(hash)
+    if (el) { el.scrollIntoView({ behavior: 'smooth' }); return }
+    // small delay
+    await new Promise(r => setTimeout(r, 40))
+  }
+}
+
+// при прямом заходе
+onMounted(() => scrollToHash(route.hash))
+
+// при переходе внутри SPA
+watch(() => route.hash, (newHash) => {
+  scrollToHash(newHash)
+})
 </script>
 
 <template>
@@ -40,7 +61,7 @@
         <p class="text-gray-500">ОГРНИП. 322508100099740 ИНН. 571901359606</p>
       </div>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 py-7 md:py-[60px] border-t border-b border-black items-center">
+    <div id="form" class="grid grid-cols-1 md:grid-cols-2 py-7 md:py-[60px] border-t border-b border-black items-center">
       <p class="text-[20px] md:text-[32px] font-semibold mb-4 md:mb-0">Обсудить проект</p>
       <BlockForm/>
     </div>

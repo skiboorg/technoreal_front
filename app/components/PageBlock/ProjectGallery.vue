@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import {Carousel, Pagination, Slide} from "vue3-carousel";
 const slider = ref()
+const {$api} = useNuxtApp()
 
-const images = [
-    '/index_slider/1.png',
-    '/index_slider/2.png',
-    '/index_slider/3.png',
-    '/index_slider/4.png',
-    '/index_slider/5.png',
-    '/index_slider/6.png',
-    '/index_slider/7.png',
-]
+const {data:images} = await useAsyncData(()=>$api.blank.home_gallery())
+
+// const images = [
+//     '/index_slider/1.png',
+//     '/index_slider/2.png',
+//     '/index_slider/3.png',
+//     '/index_slider/4.png',
+//     '/index_slider/5.png',
+//     '/index_slider/6.png',
+//     '/index_slider/7.png',
+// ]
 const carouselConfig = {
   itemsToShow: 1,
   wrapAround: true,
@@ -32,17 +35,14 @@ const carouselConfig = {
         <Button @click="slider.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующее фото"/>
       </div>
     </div>
-
     <Carousel ref="slider"  v-bind="carouselConfig">
       <Slide v-for="i in images" class="flex flex-col items-start ">
-        <img class="w-full mb-[80px] md:mb-[120px] h-[500px] md:h-auto object-cover" :src="i" alt="">
-
+        <img class="w-full mb-[80px] md:mb-[120px] h-[340px] md:h-auto object-cover" :src="i.image" alt="">
       </Slide>
     </Carousel>
     <div class="block md:flex items-start gap-[275px] manrope-font border-b border-black pb-[80px] md:!pb-[140px]">
       <!-- Маленький заголовок -->
       <p class="mb-10 md:mb-0 text-sm text-gray-400 pt-1 whitespace-nowrap">Наши принципы</p>
-
       <div class="">
         <h2 class="text-[22px] md:text-[36px] sm:text-3xl md:text-4xl font-medium leading-tight mb-10">
           Каждая рекламная конструкция — это лицо вашего бизнеса. Мы знаем, как сделать его запоминающимся.<br>
@@ -65,13 +65,8 @@ const carouselConfig = {
             </p>
           </div>
         </div>
-
       </div>
-
-
     </div>
-
-
   </div>
 </section>
 </template>
