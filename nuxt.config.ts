@@ -7,12 +7,53 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
+  site: {
+    url: 'https://texnoreal.com', // ← твой домен без слэша на конце
+    name: 'Texnoreal',
+  },
+
+  sitemap: {
+    enabled: true,
+
+    autoLastmod: true,
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+    },
+    exclude: ['/admin/**'], // если есть разделы, которые не должны попадать в sitemap
+  },
+
+  robots: {
+    enabled: true,
+    rules: [
+      {
+        UserAgent: '*',
+        Allow: '/',
+        Disallow: ['/admin', '/auth'],
+      },
+    ],
+    sitemap: 'https://texnoreal.com/sitemap.xml',
+  },
+
   modules: [
     '@pinia/nuxt',
     "@nuxtjs/tailwindcss",
     "@primevue/nuxt-module",
     'nuxt3-notifications',
     'vue3-carousel-nuxt',
+    '@nuxtjs/robots',
+    '@nuxtjs/sitemap',
+    [
+      'yandex-metrika-module-nuxt3',
+      {
+        id: '104558794',
+        webvisor: true,
+        clickmap: true,
+        // useCDN: false,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      }
+    ]
   ],
 
   css: [
@@ -22,7 +63,7 @@ export default defineNuxtConfig({
     '~/assets/styles/vars.css',
   ],
 
-  ssr: false,
+  ssr: true,
 
   primevue: {
 
