@@ -5,8 +5,8 @@ const {data} = await useAsyncData(()=>$api.blank.project(slug))
 const config = useRuntimeConfig();
 
 useSeoMeta({
-  title: 'Портфолио Технореал – торговая мебель и реализованные проекты',
-  description: 'Портфолио реализованных проектов Технореал: торговые витрины, стеллажи, островные конструкции, мебель HoReCa и ресепшены.'
+  title: data.value.page_title,
+  description: data.value.page_description
 })
 </script>
 
@@ -87,6 +87,7 @@ useSeoMeta({
                    :services="item.services"
                    :image="config.public.apiUrl+item.cover"/>
       </div>
+      <div v-if="data.content" class="html_content mt-20" v-html="data.content"></div>
     </div>
   </section>
 </template>

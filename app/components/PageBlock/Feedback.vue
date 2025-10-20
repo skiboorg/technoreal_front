@@ -36,34 +36,37 @@ const carouselConfig = {
 </script>
 
 <template>
-<section>
-  <div class="">
-    <div class="flex flex-wrap items-start justify-between mb-[40px] md:mb-0 relative">
-      <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
-                               big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>
-      <div class="absolute md:relative bottom-0 flex gap-2">
-        <Button @click="carousel.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
-        <Button @click="carousel.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующие отзывы"/>
-      </div>
-    </div>
-    <Carousel ref="carousel" v-bind="carouselConfig">
-      <Slide v-for="i in data" class="flex flex-col items-start justify-start">
-        <div class="flex gap-7 items-center mb-9">
-          <img class="w-[88px] h-[88px] rounded-full object-cover " :src="i.client_photo" alt="">
-          <p class="manrope-font">{{i.client_name}}<br>
-            <span class="font-bold">{{i.client_position}}</span>
-          </p>
+  <client-only>
+    <section>
+      <div class="">
+        <div class="flex flex-wrap items-start justify-between mb-[40px] md:mb-0 relative">
+          <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
+                                   big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>
+          <div class="absolute md:relative bottom-0 flex gap-2">
+            <Button @click="carousel.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
+            <Button @click="carousel.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующие отзывы"/>
+          </div>
         </div>
-        <p v-html="i.text"></p>
-      </Slide>
+        <Carousel ref="carousel" v-bind="carouselConfig">
+          <Slide v-for="i in data" class="flex flex-col items-start justify-start">
+            <div class="flex gap-7 items-center mb-9">
+              <img class="w-[88px] h-[88px] rounded-full object-cover " :src="i.client_photo" alt="">
+              <p class="manrope-font">{{i.client_name}}<br>
+                <span class="font-bold">{{i.client_position}}</span>
+              </p>
+            </div>
+            <p v-html="i.text"></p>
+          </Slide>
 
 
 
 
-    </Carousel>
-    
-  </div>
-</section>
+        </Carousel>
+
+      </div>
+    </section>
+  </client-only>
+
 </template>
 
 <style scoped>

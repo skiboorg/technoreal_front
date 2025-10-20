@@ -4,8 +4,8 @@ const {slug} = useRoute().params
 const {data} = await useAsyncData(()=>$api.blank.service(slug))
 
 useSeoMeta({
-  title: 'Услуги Технореал – проектирование и производство мебели ',
-  description: 'Индивидуальное проектирование и производство торговой мебели, витрин, стеллажей, ресепшенов, мебели для HoReCa и рекламных решений. '
+  title: data.value.page_title,
+  description: data.value.page_description
 })
 </script>
 
@@ -76,6 +76,7 @@ useSeoMeta({
     <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px]  border-b border-black "/>
     <PageBlockForm/>
     <PageBlockGallery :items="data.images" class="mb-[0px] md:mb-[140px] py-[0px] pb-[80px]  md:py-[140px]  border-b border-black "/>
+    <div class="html_content" v-html="data.content"></div>
   </div>
 </section>
 </template>

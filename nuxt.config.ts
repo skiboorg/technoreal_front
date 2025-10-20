@@ -7,6 +7,14 @@ export default defineNuxtConfig({
     compatibilityVersion: 4
   },
 
+  app: {
+    head: {
+      meta: [
+        { name: 'yandex-verification', content: '437436ef61223918' },
+      ],
+    },
+  },
+
   site: {
     url: 'https://texnoreal.com', // ← твой домен без слэша на конце
     name: 'Texnoreal',
@@ -42,7 +50,7 @@ export default defineNuxtConfig({
     'nuxt3-notifications',
     'vue3-carousel-nuxt',
     '@nuxtjs/robots',
-    '@nuxtjs/sitemap',
+    // '@nuxtjs/sitemap',
     [
       'yandex-metrika-module-nuxt3',
       {
