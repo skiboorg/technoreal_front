@@ -27,6 +27,9 @@ export function createBlankRepository(appFetch: typeof $fetch){
         news_item(slug){
             return appFetch(`/api/data/news/${slug}/`);
         },
+        seo(slug){
+            return appFetch(`/api/data/seo/${slug}/`);
+        },
 
 
     }

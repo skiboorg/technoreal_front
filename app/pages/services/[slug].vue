@@ -13,7 +13,7 @@ useSeoMeta({
 <section >
   <div class="container">
       <div class="pb-[50px] md:pb-[90px]">
-        <p class="text-[36px] md:text-[96px] manrope-font leading-[90%] ">{{data.name}}</p>
+        <h1 class="text-[36px] md:text-[96px] manrope-font leading-[90%] ">{{data.name}}</h1>
       </div>
     <div class="border-t border-black grid grid-cols-2 py-5 items-center">
       <div class="border-r border-black">

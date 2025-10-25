@@ -14,7 +14,7 @@ useSeoMeta({
 
       <div class="grid grid-cols-12 gap-10">
         <div class="col-span-12 md:col-span-8 ">
-          <h3 class="text-[22px] md:text-[48px] manrope-font leading-[100%]  mb-4 md:mb-7">{{data.name}}</h3>
+          <h1 class="text-[22px] md:text-[48px] manrope-font leading-[100%]  mb-4 md:mb-7">{{data.name}}</h1>
           <div class="border-l border-black py-2 px-3 mb-4 md:mb-14">
             <p class="opacity-40">Опубликовано</p>
             <p >{{new Date(data.created).toLocaleDateString()}}</p>
