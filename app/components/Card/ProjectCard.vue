@@ -5,7 +5,7 @@ defineProps(['item'])
 <template>
   <div class="grid grid-cols-12  items-end border-t border-black py-10 gap-[30px] md:gap-6">
     <div class="col-span-12 md:col-span-6 flex flex-col items-start justify-between h-full ">
-      <p class="text-[22px] md:text-[32px] mb-[30px] md:mb-0">{{item.name}}</p>
+      <h3 class="text-[22px] md:text-[32px] mb-[30px] md:mb-0">{{item.name}}</h3>
       <div class="flex flex-wrap gap-1 md:gap-5"><p class="opacity-40 w-full md:w-auto">Услуги</p><p>/Производство торгового оборудования</p></div>
     </div>
     <div class="col-span-12 md:col-span-4">
