@@ -2,6 +2,7 @@
 const route = useRoute()
 const { $api } = useNuxtApp()
 const seo = ref<any>(null)
+const show_seo = ref(false)
 
 async function loadSeo() {
   try {
@@ -41,7 +42,8 @@ watch(
 <template>
   <BlockHeader />
   <slot />
-  <div v-if="seo?.content" class="container">
+  <Button v-if="seo?.content" label="Подробнее" @click="show_seo=!show_seo"/>
+  <div v-if="show_seo" class="container">
     <div  class="html-content mt-10" v-html="seo.content"></div>
   </div>
 
