@@ -21,7 +21,7 @@ useSeoMeta({
                   :is_news_item="true"/>
       </div>
 
-      <PageBlockForm/>
+<!--      <PageBlockForm/>-->
     </div>
   </section>
 </template>

@@ -6,9 +6,7 @@
   <div class="container">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] pt-10 md:pt-[80px] pb-[26px] md:gap-0 items-end">
       <div class="hidden md:block">
-        <a href="/contacts#form">
-          <Button class="px-[44px]" label="Обсудить проект"/>
-        </a>
+        <BlockCallbackModal/>
 
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2">

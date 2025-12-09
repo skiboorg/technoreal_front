@@ -6,10 +6,10 @@
 <section>
   <div class="container relative">
 
-    <p class="text-[36px] md:text-[96px] manrope-font leading-[90%] relative mt-[60px] md:mt-[96px] mb-[50px] md:mb-20 md:indent-[10%]">17 лет проектирования, производства и монтажа
+    <h1 class="text-[36px] md:text-[96px] manrope-font leading-[90%] relative mt-[60px] md:mt-[96px] mb-[50px] md:mb-20 md:indent-[10%]">17 лет проектирования, производства и монтажа
       рекламной продукции
 
-    </p>
+    </h1>
 
 <!--    <UILinkWithArrow  class="md:absolute md:bottom-[5px] mb-[50px] md:mb-0 right-[40px] indent-0" label="ОБСУДИТЬ ПРОЕКТ" to="/contacts"/>-->
     <div class="md:absolute md:bottom-[5px] mb-[50px] md:mb-0 right-[40px] indent-0">

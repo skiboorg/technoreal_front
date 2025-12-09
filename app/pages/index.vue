@@ -19,9 +19,9 @@
   <div class="container">
     <PageBlockProjects :show_title="true" class="mb-[80px] md:mb-[140px]"/>
   </div>
-  <div class="container">
-    <PageBlockForm id="#form" class="mb-[80px] md:mb-[100px]"/>
-  </div>
+<!--  <div class="container">-->
+<!--    <PageBlockForm id="#form" class="mb-[80px] md:mb-[100px]"/>-->
+<!--  </div>-->
   <PageBlockProjectGallery class="mb-[80px] md:mb-[140px]  "/>
   <PageBlockNews class=" "/>
   <PageBlockFaq class=""/>

@@ -3,9 +3,10 @@ const {$api} = useNuxtApp()
 const {slug} = useRoute().params
 const {data} = await useAsyncData(()=>$api.blank.news_item(slug))
 useSeoMeta({
-  title: 'Новости и статьи Технореал – мебель, витрины, HoReCa',
-  description: 'Актуальные новости, статьи и советы по мерчандайзингу, торговым витринам, мебели для HoReCa и рекламным конструкциям.\n'
+  title: data.value.page_title || 'Новости и статьи Технореал – мебель, витрины, HoReCa',
+  description: data.value.page_description || 'Актуальные новости, статьи и советы по мерчандайзингу, торговым витринам, мебели для HoReCa и рекламным конструкциям.\n'
 })
+
 </script>
 
 <template>

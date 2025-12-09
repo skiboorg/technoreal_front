@@ -36,8 +36,9 @@ watch(
         <p class="leading-[100%] uppercase font-semibold">ТЕХНОРЕАЛ</p>
 
       </nuxt-link>
-      <nav class="hidden md:flex gap-8">
+      <nav class="hidden md:flex gap-8 items-center">
         <nuxt-link v-for="link in links" :to="link.to">{{link.label}}</nuxt-link>
+        <BlockCallbackModal/>
 
       </nav>
       <div class="block md:hidden">
@@ -53,6 +54,7 @@ watch(
   <Drawer v-model:visible="menuActive" header=" " position="right">
     <div class="flex flex-col items-start gap-4">
       <NuxtLink :to="link.to" v-for="(link,index) in links" :key="index">{{link.label}}</NuxtLink>
+      <BlockCallbackModal/>
     </div>
 
 

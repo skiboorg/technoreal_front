@@ -42,9 +42,12 @@ watch(
 <template>
   <BlockHeader />
   <slot />
-  <Button v-if="seo?.content" label="Подробнее" @click="show_seo=!show_seo"/>
-  <div v-if="show_seo" class="container">
-    <div  class="html-content mt-10" v-html="seo.content"></div>
+  <div v-if="seo?.content" class="container">
+    <Button class="mt-10"  label="Подробнее" @click="show_seo=!show_seo"/>
+    <div v-if="show_seo" class="container">
+      <div  class="html-content mt-10" v-html="seo.content"></div>
+    </div>
+
   </div>
 
   <BlockFooter />

@@ -75,7 +75,7 @@ useSeoMeta({
     <PageBlockProjects :projects="data.projects" class="mb-[80px] md:mb-[140px] border-b border-black "/>
     <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px]  border-b border-black "/>
     <PageBlockForm/>
-    <PageBlockGallery :items="data.images" class="mb-[0px] md:mb-[140px] py-[0px] pb-[80px]  md:py-[140px]  border-b border-black "/>
+    <PageBlockGallery :items="data.images" class="mb-[0px] md:mb-[140px] py-[0px] pb-[80px]    border-b border-black "/>
 
     <Button v-if="data?.content" label="Подробнее" @click="show_seo=!show_seo"/>
     <div v-if="show_seo" class="container">
