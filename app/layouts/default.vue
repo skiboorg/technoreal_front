@@ -41,7 +41,7 @@ watch(
 
 <template>
   <BlockHeader />
-  <slot />
+  <slot/>
   <div v-if="seo?.content" class="container">
     <Button class="mt-10"  label="Подробнее" @click="show_seo=!show_seo"/>
     <div v-if="show_seo" class="container">

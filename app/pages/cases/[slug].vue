@@ -16,7 +16,7 @@ useSeoMeta({
 <!--      {{data}}-->
 <!--    </pre>-->
     <div class="container">
-      <BlockSectionTitle class="md:!mb-[115px]" :title="data.name"/>
+      <BlockSectionTitle class="md:!mb-[115px]" :title="data.name" :is_h1="true"/>
       <div class="border-t border-black grid py-4 grid-cols-1 md:grid-cols-2 items-center">
 
         <div class="border-b  md:border-b-0 border-black grid grid-cols-12  gap-[15px] md:gap-0  pb-[26px] md:pb-0">

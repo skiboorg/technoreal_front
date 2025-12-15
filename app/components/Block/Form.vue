@@ -44,23 +44,23 @@ const sendForm = async () => {
 </script>
 
 <template>
-  <div class="grid grid-cols-12 gap-[30px] md:gap-7">
+  <div class="grid grid-cols-12 gap-3 md:gap-7">
     <div class="col-span-12 md:col-span-6">
       <FloatLabel variant="on">
         <InputText fluid v-model="formData.name" />
-        <label>Ваше имя</label>
+        <label>Ваше имя*</label>
       </FloatLabel>
     </div>
     <div class="col-span-12 md:col-span-6">
       <FloatLabel variant="on">
         <InputMask mask="+7(999) 999-99-99" fluid v-model="formData.phone" />
-        <label>Номер телефона</label>
+        <label>Номер телефона*</label>
       </FloatLabel>
     </div>
     <div class="col-span-12">
       <FloatLabel variant="on">
         <InputText fluid v-model="formData.text" />
-        <label>Расскажите про ваш проект</label>
+        <label>Расскажите о вашем проекте*</label>
       </FloatLabel>
     </div>
     <div class="col-span-12 relative">
@@ -70,18 +70,19 @@ const sendForm = async () => {
             fluid
             :value="formData.file ? formData.file.name : ''"
         />
-        <label class="!leading-[120%]" v-if="!formData.file">*Прикрепить файл<br class="block md:hidden"> проекта или смету</label>
+        <label class="!leading-[120%]" v-if="!formData.file">Прикрепить файл <br class="block md:hidden"> <span>(не обязательно)</span>  </label>
       </FloatLabel>
       <label class="absolute right-0 top-[10px] border-b border-black cursor-pointer">
         Выбрать файл
         <input type="file" class="hidden" @change="handleFileChange" />
       </label>
     </div>
-    <div class="col-span-12">
+    <div class="col-span-12 mt-3">
       <Button
           fluid
           :label="loading ? 'Отправка...' : 'Рассчитать стоимость'"
-          :disabled="loading"
+          :loading="loading"
+          :disabled="!formData.name || !formData.phone || !formData.text"
           @click="sendForm"
       />
       <p v-if="send" class="mt-4 text-green-600">✅ Ваш запрос успешно отправлен! Мы с вами свяжемся в течении 24-48 часов для уточнения деталей.</p>

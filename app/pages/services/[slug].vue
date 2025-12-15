@@ -44,15 +44,19 @@ useSeoMeta({
         <p class="text-gray-500">{{data.recommendation}}</p>
       </div>
     </div>
+
       <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Варианты проектов"
                                :big-text="data.heading_implementation"/>
       <div class="border-b border-black mb-[80px] md:mb-[140px]">
         <CardCategory v-for="item in data.variants" :item="item"/>
       </div>
-    <BlockTitleWithSmallText class="max-w-[70%] " extra_class="mb-[60px]  md:mb-[80px]" small-text="Почему мы?"
+    <BlockTitleWithSmallText class="max-w-[70%] " extra_class="mb-[60px]  md:mb-[80px] md:max-w-[60%]" small-text="Почему мы?"
                              big-text="Воплощаем нестандартные идеи в функциональное торговое оборудование"/>
-    <div class="grid grid-cols-12 gap-6 mb-[60px]">
-      <div class="col-start-1 col-end-13 md:col-start-7 md:col-end-10 ">
+    <div class="grid grid-cols-12 gap-6 mb-[60px] items-end ">
+      <div class="col-span-12 md:col-span-2  order-3 md:order-1">
+        <BlockCallbackModal :with_icon="true"/>
+      </div>
+      <div class="col-span-12 md:col-span-3 md:col-start-7 order-1 md:order-2">
         <p class=" text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
           Индивидуальный подход<br>к задачам любого масштаба
         </p>
@@ -60,7 +64,7 @@ useSeoMeta({
           Каждый проект для нас уникален. Мы адаптируем решения под цели и бюджет клиента — будь то небольшая вывеска или комплексное оформление федеральной сети.
         </p>
       </div>
-      <div class="col-start-1 col-end-13 md:col-start-10 md:col-end-13 ">
+      <div class="col-span-12 md:col-span-3 order:2 md:order-3">
         <p class="text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
           Опытная команда<br>дизайнеров и инженеров
         </p>

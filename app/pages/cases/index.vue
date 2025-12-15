@@ -14,7 +14,7 @@ useSeoMeta({
   <section>
 
     <div class="container">
-      <BlockSectionTitle title="Наши проекты"/>
+      <BlockSectionTitle title="Наши проекты" :is_h1="true"/>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
         <CardCase v-for="(item,index) in data" :item="item" :index="index" :total="data.length"/>
 

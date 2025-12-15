@@ -8,7 +8,7 @@ useSeoMeta({
 <template>
   <section>
     <div class="container !mb-[30px]">
-      <BlockSectionTitle class="mb-[100px]" title="О нашей компании"/>
+      <BlockSectionTitle class="mb-[100px]" title="О нашей компании" :is_h1="true"/>
       <div class="border-t border-black pt-[30px]">
         <div class="grid grid-cols-1 md:grid-cols-4 ">
           <div class=" md:border-r border-black pb-[30px] md:pb-0">

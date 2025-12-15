@@ -25,7 +25,7 @@ watch(() => route.hash, (newHash) => {
 
 <template>
   <div class="container">
-    <BlockSectionTitle class="md:!mb-[115px]" title="Помогаем брендам<br>заявить о себе"/>
+    <BlockSectionTitle class="md:!mb-[115px]" title="Контакты" :is_h1="true"/>
     <div class="grid grid-cols-1 md:grid-cols-2 py-7  md:py-10 border-t border-black">
 
       <p class="text-[20px] md:text-[32px] font-semibold mb-4 md:mb-0"><a href="mailto:info@texnoreal.com">info@texnoreal.com</a></p>
