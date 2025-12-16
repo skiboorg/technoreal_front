@@ -21,7 +21,7 @@ useSeoMeta({
         <p class="opacity-40">{{data.production_time}}</p>
       </div>
       <div class="justify-self-end">
-        <UILinkWithArrow label="ОБСУДИТЬ ПРОЕКТ" to="/"/>
+        <BlockCallbackModal :is_link="true" :not_absolute="true"/>
       </div>
     </div>
   </div>

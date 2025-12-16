@@ -1,2 +1,7 @@
 User-agent: *
-Disallow: /
+Disallow: /admin
+Disallow: /*?page=
+Allow: /
+
+Sitemap: https://texnoreal.com/sitemap.xml
+Host: texnoreal.com
