@@ -2,6 +2,9 @@
 const {$appFetch} = useNuxtApp()
 const loading = ref(false)
 const send = ref(false)
+const agree = ref(false)
+
+const emits = defineEmits(['send'])
 
 const formData = ref({
   name: '',
@@ -34,7 +37,8 @@ const sendForm = async () => {
       method: 'POST',
       body: fd, // FormData напрямую
     })
-    send.value = true
+    emits('send')
+    navigateTo('/thanks')
   } catch (e) {
     console.error('Ошибка отправки формы:', e)
   } finally {
@@ -76,13 +80,20 @@ const sendForm = async () => {
         Выбрать файл
         <input type="file" class="hidden" @change="handleFileChange" />
       </label>
+
+    </div>
+    <div class="col-span-12">
+      <div class="flex items-center gap-2">
+        <Checkbox v-model="agree"  inputId="agree" name="agree" value="Cheese"  />
+        <label for="agree"> Соглашаюсь на обработку персональных данных и ознакомлен(а) с <a class="inline-block border-b" target="_blank" href="/policy.pdf">политикой конфиденциальности </a></label>
+      </div>
     </div>
     <div class="col-span-12 mt-3">
       <Button
           fluid
           :label="loading ? 'Отправка...' : 'Рассчитать стоимость'"
           :loading="loading"
-          :disabled="!formData.name || !formData.phone || !formData.text"
+          :disabled="!agree || !formData.name || !formData.phone || !formData.text"
           @click="sendForm"
       />
       <p v-if="send" class="mt-4 text-green-600">✅ Ваш запрос успешно отправлен! Мы с вами свяжемся в течении 24-48 часов для уточнения деталей.</p>

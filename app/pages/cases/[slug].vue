@@ -87,7 +87,7 @@ useSeoMeta({
                    :services="item.services"
                    :image="config.public.apiUrl+item.cover"/>
       </div>
-      <div v-if="data.content" class="html_content mt-20" v-html="data.content"></div>
+      <div v-show="data.content" class="html_content mt-20" v-html="data.content"></div>
     </div>
   </section>
 </template>

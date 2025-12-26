@@ -82,7 +82,7 @@ useSeoMeta({
     <PageBlockGallery :items="data.images" class="mb-[0px] md:mb-[140px] py-[0px] pb-[80px]    border-b border-black "/>
 
     <Button v-if="data?.content" label="Подробнее" @click="show_seo=!show_seo"/>
-    <div v-if="show_seo" class="container">
+    <div v-show="show_seo" class="container">
       <div  class="html-content mt-10" v-html="data.content"></div>
     </div>
 

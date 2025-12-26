@@ -22,17 +22,21 @@ const projects = computed(() => {
 <template>
   <section>
 
+
       <BlockSectionTitle
           v-if="show_title"
           title="Наши проекты"
           link_label="ВСЕ проекты"
           link_to="/cases"
       />
-      <CardProjectCard
-          v-for="item in projects"
-          :key="item.slug"
-          :item="item"
-      />
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
+    <CardCase v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
+    </div>
+<!--      <CardProjectCard-->
+<!--          v-for="item in projects"-->
+<!--          :key="item.slug"-->
+<!--          :item="item"-->
+<!--      />-->
 
   </section>
 </template>

@@ -20,17 +20,8 @@ defineProps(['with_icon','is_text','is_link','not_absolute'])
             label="Обсудить проект"/>
   </template>
 
-  <Dialog v-model:visible="visible" modal header=" " class="max-w-[90%] md:max-w-[60%] md:p-10 relative" :show-header="false">
-    <Button icon="pi pi-times" severity="secondary" text @click="visible = false" class="absolute top-2 right-1"/>
-    <h2
-        class="
-      w-full
-      mb-5
-      md:mb-[80px]
-      text-zinc-800 text-[22px] md:text-5xl font-semibold manrope-font leading-[22px] md:leading-[48px"    >
-      <span class=" block mt-5 md:mt-10  " >Расскажите о вашем проекте</span>
-    </h2>
-    <BlockForm/>
+  <Dialog v-model:visible="visible" modal class="relative max-w-[90%] md:max-w-[60%] " header="Расскажите о вашем проекте" >
+    <BlockForm @send="visible = false"/>
   </Dialog>
 
 </template>

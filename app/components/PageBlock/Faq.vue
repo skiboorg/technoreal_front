@@ -22,7 +22,7 @@ const faqs = [
         <Accordion expandIcon="pi pi-plus" collapseIcon="pi pi-minus">
           <AccordionPanel v-for="(item,index) in faqs" :value="index">
 
-            <AccordionHeader><p><sup class="opacity-40 text-[12px]">0{{index+1}}</sup> {{item.q}}</p>
+            <AccordionHeader><p class="max-w-[80%]"><sup class="opacity-40 text-[12px]">0{{index+1}}</sup> {{item.q}}</p>
               <template #toggleicon>
                 <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect width="36" height="36" rx="7" fill="#F8F8F8"/>
