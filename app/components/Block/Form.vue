@@ -64,7 +64,7 @@ const sendForm = async () => {
     <div class="col-span-12">
       <FloatLabel variant="on">
         <InputText fluid v-model="formData.text" />
-        <label>Расскажите о вашем проекте*</label>
+        <label>Расскажите о вашем проекте</label>
       </FloatLabel>
     </div>
     <div class="col-span-12 relative">
@@ -93,7 +93,7 @@ const sendForm = async () => {
           fluid
           :label="loading ? 'Отправка...' : 'Рассчитать стоимость'"
           :loading="loading"
-          :disabled="!agree || !formData.name || !formData.phone || !formData.text"
+          :disabled="!agree || !formData.name || !formData.phone "
           @click="sendForm"
       />
       <p v-if="send" class="mt-4 text-green-600">✅ Ваш запрос успешно отправлен! Мы с вами свяжемся в течении 24-48 часов для уточнения деталей.</p>

@@ -1,6 +1,7 @@
 <script setup lang="ts">
 const props = defineProps<{
   show_title?: boolean
+  is_index_page?: boolean
   projects?: any[]
 }>()
 
@@ -29,9 +30,16 @@ const projects = computed(() => {
           link_label="ВСЕ проекты"
           link_to="/cases"
       />
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
-    <CardCase v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
+    <div v-if="!is_index_page" class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
+    <CardCase  v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
+
     </div>
+    <div v-else class="grid grid-cols-1 md:grid-cols-4 gap-7 border-b border-t py-10 border-black  mb-[80px] md:mb-[140px]">
+
+      <CardSmallCase v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
+    </div>
+
+
 <!--      <CardProjectCard-->
 <!--          v-for="item in projects"-->
 <!--          :key="item.slug"-->

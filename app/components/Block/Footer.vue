@@ -19,7 +19,7 @@
         </div>
         <div class="">
           <p class="opacity-50 mb-[30px]">АДРЕС</p>
-          <p class="mb-[15px]">Московская область, г.Лобня, Промышленная 3</p>
+          <p class="mb-[15px]">г. Лобня, ул. Горки Киовские, д. 86</p>
           <p class="mb-[50px] md:mb-[110px]">Время работы офиса с 9:00 - 17:00</p>
           <br>
           <p class="hidden md:block text-right opacity-50 font-light">© 2008 - 2025 Технореал</p>

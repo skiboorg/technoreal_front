@@ -39,7 +39,7 @@ watch(() => route.hash, (newHash) => {
       <p class="text-[20px] md:text-[32px] font-semibold mb-4 md:mb-0">Москва</p>
       <div class="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-4">
         <div class="">
-          <p class="text-gray-500">Россия, Московская область, г.Лобня, Промышленная 3</p>
+          <p class="text-gray-500">г. Лобня, ул. Горки Киовские, д. 86</p>
           <p class="text-gray-500">Время работы офиса с 9:00 - 17:00</p>
         </div>
         <a href="https://yandex.ru/maps/21641/lobnja/house/promyshlennaya_ulitsa_3/Z04Ycg9jSkYAQFtsfXxwdnVmZQ==/?ll=37.483337%2C56.017951&z=17" target="_blank" class="inline-flex items-center gap-2  pb-1 font-semibold border-b border-black leading-[75%]" >

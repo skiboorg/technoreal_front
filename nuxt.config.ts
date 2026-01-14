@@ -12,6 +12,31 @@ export default defineNuxtConfig({
       meta: [
         { name: 'yandex-verification', content: '437436ef61223918' },
       ],
+        script: [
+            {
+                innerHTML: `(function(w, d, s, o){
+                 var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js';j.onload = function() {
+                  if (document.readyState !== 'loading') Marquiz.init(o);
+                  else document.addEventListener("DOMContentLoaded", function() {
+                   Marquiz.init(o);
+                  });
+                 };
+                 d.head.insertBefore(j, d.head.firstElementChild);
+                })(window, document, 'script', {
+                 host: '//quiz.marquiz.ru',
+                 region: 'ru',
+                 id: '694d205456ae6700197ff39e',
+                 autoOpen: 15,
+                 autoOpenFreq: 'always',
+                 openOnExit: false,
+                 disableOnMobile: false
+                });`,
+                type: 'text/javascript'
+            }
+        ],
+        __dangerouslyDisableSanitizersByTagID: {
+            marquiz: ['innerHTML']
+        }
     },
   },
 

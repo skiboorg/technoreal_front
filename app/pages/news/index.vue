@@ -13,7 +13,7 @@ useSeoMeta({
   <section>
     <div class="container">
       <BlockSectionTitle title="Новости" :is_h1="true"/>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-7 border-b border-black pb-[60px] md:pb-[120px] mb-[80px] md:mb-[140px]">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-7 border-b border-black pb-[60px] md:pb-[120px]">
         <CardNews v-for="item in data" :name="item.name"
                   :image="item.cover"
                   :to="`/news/${item.slug}`"

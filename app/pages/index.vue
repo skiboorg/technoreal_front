@@ -5,7 +5,7 @@
   </div>
   <PageBlockWhyWe class="mb-[80px] md:mb-[100px]"/>
   <div class="container">
-    <PageBlockProjects :show_title="true" class="mb-[80px] md:mb-[140px]"/>
+    <PageBlockProjects :is_index_page="true" :show_title="true" class="mb-[80px] md:mb-[140px]"/>
   </div>
   <PageBlockProjectGallery class="mb-[80px] md:mb-[140px]  "/>
   <PageBlockNews class=" "/>
