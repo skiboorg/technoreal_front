@@ -60,7 +60,7 @@ useSeoMeta({
       <BlockTitleWithSmallText class="  md:mb-[110px]" extra_class= 'md:max-w-[65%] md:mb-[110px]' small-text="Миссия"
                                big-text="Наша миссия — превращать идеи в уникальные рекламные инструменты, помогая бизнесу находить свой голос в конкурентной среде"/>
 
-      <div class="grid grid-cols-12 gap-[30px] pb-[80px] md:pb-[140px] mb-[80px] md:mb-[140px] border-b border-black">
+      <div class="grid grid-cols-12 gap-[30px] pb-[80px] md:pb-[140px]  border-b border-black">
         <div class="col-start-1 col-end-13 md:col-start-1 md:col-end-4 border border-gray-300 p-[20px]">
           <svg class="mb-[40px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M20.5298 5.52718L16.2518 1.24804C15.5628 0.558765 14.4455 0.558765 13.7565 1.24804L9.47848 5.5272C8.78939 6.21647 8.78939 7.334 9.47848 8.02327L13.7564 12.3024C14.4455 12.9917 15.5627 12.9917 16.2518 12.3024L20.5298 8.02325C21.2189 7.33398 21.2189 6.21645 20.5298 5.52718Z" fill="#EF7C00"/>
