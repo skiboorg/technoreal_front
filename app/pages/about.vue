@@ -12,7 +12,6 @@ useSeoMeta({
       <div class="border-t border-black pt-[30px]">
         <div class="grid grid-cols-1 md:grid-cols-4 ">
           <div class=" md:border-r border-black pb-[30px] md:pb-0">
-
             <p class="manrope-font text-[26px] md:text-5xl font-semibold k mb-[15px] ">17 лет</p>
             <p class="text-gray-500">Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование.</p>
           </div>
@@ -59,7 +58,6 @@ useSeoMeta({
     <div class="container">
       <BlockTitleWithSmallText class="  md:mb-[110px]" extra_class= 'md:max-w-[65%] md:mb-[110px]' small-text="Миссия"
                                big-text="Наша миссия — превращать идеи в уникальные рекламные инструменты, помогая бизнесу находить свой голос в конкурентной среде"/>
-
       <div class="grid grid-cols-12 gap-[30px] pb-[80px] md:pb-[140px]  border-b border-black">
         <div class="col-start-1 col-end-13 md:col-start-1 md:col-end-4 border border-gray-300 p-[20px]">
           <svg class="mb-[40px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,11 +76,9 @@ useSeoMeta({
             <path d="M0 22.5435V29.9999L14.9993 22.5435V14.9993L0 22.5435Z" fill="#EF7C00"/>
             <path d="M15.0007 22.5435V29.9999L30.0001 22.5435V14.9993L15.0007 22.5435Z" fill="#EF7C00"/>
           </svg>
-
           <p class="font-semibold text-[16px] mb-[10px]">Качество</p>
           <p class="opacity-50">Гарантируем надежность и долговечность каждой конструкции</p>
         </div>
-
         <div class="col-start-1 col-end-13 md:col-start-10 md:col-end-13 border border-gray-300 p-[20px]">
           <svg class="mb-[40px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.0006 7.50035C15.0006 3.36192 11.6422 0 7.50028 0C3.35836 0 0 3.36192 0 7.50035C0 11.6388 3.35836 15.0007 7.50028 15.0007C11.6422 15.0007 15.0006 11.6388 15.0006 7.50035Z" fill="#EF7C00"/>
@@ -90,11 +86,9 @@ useSeoMeta({
             <path d="M15.0006 22.4996C15.0006 18.3612 11.6422 14.9993 7.50028 14.9993C3.35836 14.9993 0 18.3612 0 22.4996C0 26.6381 3.35836 30 7.50028 30C11.6422 30 15.0006 26.6381 15.0006 22.4996Z" fill="#EF7C00"/>
             <path d="M30.0001 22.4996C30.0001 18.3612 26.6417 14.9993 22.4998 14.9993C18.3579 14.9993 14.9995 18.3612 14.9995 22.4996C14.9995 26.6381 18.3579 30 22.4998 30C26.6417 30 30.0001 26.6381 30.0001 22.4996Z" fill="#EF7C00"/>
           </svg>
-
           <p class="font-semibold text-[16px] mb-[10px]">Индивидуальный подход</p>
           <p class="opacity-50">Разрабатываем рекламу, которая точно соответствует целям бренда</p>
         </div>
-
         <div class="col-start-1 col-end-13 md:col-start-7 md:col-end-10 border border-gray-300 p-[20px]">
           <svg class="mb-[40px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M15.0006 15.0001C15.0006 13.0324 14.6123 11.0826 13.8588 9.25614C13.1052 7.43849 11.9996 5.78825 10.6072 4.39413C9.21389 3 7.56028 1.8971 5.7408 1.13828C3.92043 0.388272 1.96949 0 0 0V15.0001H15.0006Z" fill="#EF7C00"/>
@@ -102,12 +96,9 @@ useSeoMeta({
             <path d="M14.9995 15C14.9995 16.9677 15.3878 18.9175 16.1413 20.7439C16.8949 22.5616 18.0005 24.2118 19.3929 25.606C20.7862 27.0001 22.4398 28.103 24.2593 28.8618C26.0797 29.6118 28.0306 30.0001 30.0001 30.0001V15H14.9995Z" fill="#EF7C00"/>
             <path d="M15.0006 15C13.0311 15 11.0802 15.3883 9.25979 16.1383C7.44031 16.8971 5.7867 18 4.39341 19.3941C3.001 20.7883 1.89537 22.4385 1.14181 24.2561C0.388256 26.0826 0 28.0324 0 30.0001H15.0006V15Z" fill="#EF7C00"/>
           </svg>
-
-
           <p class="font-semibold text-[16px] mb-[10px]">Комплексность</p>
           <p class="opacity-50">Предлагаем полный цикл: от концепции до монтажа</p>
         </div>
-
         <div class="col-start-1 col-end-13 md:col-start-4 md:col-end-7 border border-gray-300 p-[20px]">
           <svg class="mb-[40px]" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M10.3848 0H4.6158C2.06657 0 0 2.06478 0 4.61489V10.3858C0 12.9359 2.06657 15.0006 4.6158 15.0006H10.3848C12.9341 15.0006 15.0006 12.9359 15.0006 10.3858V4.61489C15.0006 2.06478 12.9341 0 10.3848 0Z" fill="#EF7C00"/>
@@ -117,20 +108,7 @@ useSeoMeta({
           <p class="font-semibold text-[16px] mb-[10px]">Ответственность</p>
           <p class="opacity-50">Разрабатываем рекламу, которая точно соответствует целям бренда</p>
         </div>
-
       </div>
-
     </div>
-<!--    <div class="container">-->
-<!--      <PageBlockForm/>-->
-<!--    </div>-->
-
-
-
-
   </section>
 </template>
-
-<style scoped>
-
-</style>

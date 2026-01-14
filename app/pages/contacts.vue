@@ -27,7 +27,6 @@ watch(() => route.hash, (newHash) => {
   <div class="container">
     <BlockSectionTitle class="md:!mb-[115px]" title="Контакты" :is_h1="true"/>
     <div class="grid grid-cols-1 md:grid-cols-2 py-7  md:py-10 border-t border-black">
-
       <p class="text-[20px] md:text-[32px] font-semibold mb-4 md:mb-0"><a href="mailto:info@texnoreal.com">info@texnoreal.com</a></p>
       <p class="text-gray-500">Почта</p>
     </div>
@@ -42,7 +41,7 @@ watch(() => route.hash, (newHash) => {
           <p class="text-gray-500">г. Лобня, ул. Горки Киовские, д. 86</p>
           <p class="text-gray-500">Время работы офиса с 9:00 - 17:00</p>
         </div>
-        <a href="https://yandex.ru/maps/21641/lobnja/house/promyshlennaya_ulitsa_3/Z04Ycg9jSkYAQFtsfXxwdnVmZQ==/?ll=37.483337%2C56.017951&z=17" target="_blank" class="inline-flex items-center gap-2  pb-1 font-semibold border-b border-black leading-[75%]" >
+        <a href="https://yandex.com/maps/21641/lobnja/house/ulitsa_gorki_kiovskiye_86/Z04YcgNgQUABQFtsfXxyeX5gZg==/?ll=37.440855%2C56.038233&z=17" target="_blank" class="inline-flex items-center gap-2  pb-1 font-semibold border-b border-black leading-[75%]" >
           На карте
           <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M1.16753 11.0748L10.9395 1.30283M10.9395 1.30283L4.7266 1.26168M10.9395 1.30283L10.9807 7.51577" stroke="#2C2C2C" stroke-width="1.7" stroke-linecap="round"/>
