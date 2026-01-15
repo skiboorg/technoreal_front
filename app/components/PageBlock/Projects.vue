@@ -34,7 +34,7 @@ const projects = computed(() => {
     <CardCase  v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
 
     </div>
-    <div v-else class="grid grid-cols-1 md:grid-cols-4 gap-7 border-b border-t py-10 border-black  mb-[80px] md:mb-[140px]">
+    <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 border-b border-t py-10 border-black  mb-[80px] md:mb-[140px]">
 
       <CardSmallCase v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
     </div>

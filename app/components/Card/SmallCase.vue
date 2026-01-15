@@ -4,8 +4,13 @@ defineProps(['item','index','total'])
 
 <template>
   <div class="flex flex-col items-start">
+
     <p class="text-[28px] leading-[100%] tracking-[-1px] mb-7">{{item.name}}</p>
-    <p class="opacity-40 mb-4">Задача проекта</p>
+    <div class="mb-4 space-y-1">
+      <nuxt-link class="opacity-40 block" v-for="service in item.services" :to="`/services/${service.slug}`">/ {{service.name}}</nuxt-link>
+
+    </div>
+
     <p class="mb-7">{{item.task}}</p>
     <NuxtLink class="inline-flex items-center gap-2 border-b border-black mb-7" :to="`/cases/${item.slug}`">
       Подробнее
