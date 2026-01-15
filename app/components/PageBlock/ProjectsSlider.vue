@@ -36,11 +36,10 @@ const projects = computed(() => {
 
 
 
-    <div class="flex flex-wrap items-end justify-between mb-[30px] md:mb-[70px] gap-10 md:gap-0 ">
-      <div class="">
+    <div class="flex flex-wrap items-end justify-between mb-[30px] md:mb-[70px] gap-2 md:gap-0 ">
+
         <h3 class="text-[36px] md:text-[80px] mb-2 manrope-font leading-[100%]">Наши проекты</h3>
-        <UILinkWithArrow  label="ВСЕ проекты" to="/cases"/>
-      </div>
+
 
       <div class="flex gap-2">
         <Button @click="slider.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
