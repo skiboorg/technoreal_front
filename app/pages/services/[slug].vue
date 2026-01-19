@@ -7,6 +7,20 @@ useSeoMeta({
   title: data.value.page_title,
   description: data.value.page_description
 })
+import { useBreakpoints } from '@vueuse/core'
+
+const breakpoints = useBreakpoints({
+  mobile: 0, // optional
+  tablet: 640,
+  laptop: 1024,
+  desktop: 1280,
+})
+
+// Can be 'mobile' or 'tablet' or 'laptop' or 'desktop'
+const activeBreakpoint = breakpoints.active()
+
+// true or false
+const laptop = breakpoints.between('laptop', 'desktop')
 </script>
 
 <template>
@@ -77,11 +91,15 @@ useSeoMeta({
     <div class="mb-[80px] md:mb-[140px] border-b border-black ">
       <BlockTitleWithSmallText  extra_class="max-w-[75%] md:max-w-[50%] !mb-[30px] md:mb-[40px]" small-text="Наши работы"
                                 big-text="Проекты, которые мы реализовали"/>
-      <CardProjectCard
-          v-for="item in data.projects"
-          :key="item.slug"
-          :item="item"
-      />
+<!--      <CardProjectCard-->
+<!--          v-for="item in data.projects"-->
+<!--          :key="item.slug"-->
+<!--          :item="item"-->
+<!--      />-->
+
+      <PageBlockProjects v-if="activeBreakpoint!=='mobile'" :is_index_page="true" :show_title="false" class="mb-[80px] md:mb-[140px]"/>
+      <PageBlockProjectsSlider v-else :is_index_page="true" :show_title="false" class="mb-[80px] md:mb-[140px]"/>
+
       <!--    <PageBlockProjects :is_index_page="true" :projects="data.projects" class="mb-[80px] md:mb-[140px] border-b border-black "/>-->
     </div>
 

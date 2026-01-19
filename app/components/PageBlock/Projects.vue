@@ -10,14 +10,12 @@ const {$api} = useNuxtApp()
 // Если show_title = true, грузим проекты с API
 const { data: loadedProjects } = await useAsyncData(
     'projects',
-    () => $api.blank.projects(true),
-    { immediate: props.show_title }
+    () => $api.blank.projects(props.is_index_page),
+    { immediate: true }
 )
 
 // Источник данных для списка
-const projects = computed(() => {
-  return props.show_title ? loadedProjects.value : props.projects
-})
+
 </script>
 
 <template>

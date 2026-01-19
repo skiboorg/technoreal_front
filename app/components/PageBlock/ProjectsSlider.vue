@@ -18,17 +18,14 @@ const carouselConfig = {
 }
 const {$api} = useNuxtApp()
 
-// Если show_title = true, грузим проекты с API
+
 const { data: loadedProjects } = await useAsyncData(
     'projects',
-    () => $api.blank.projects(true),
-    { immediate: props.show_title }
+    () => $api.blank.projects(props.is_index_page),
+    { immediate: true }
 )
 
-// Источник данных для списка
-const projects = computed(() => {
-  return props.show_title ? loadedProjects.value : props.projects
-})
+
 </script>
 
 <template>
@@ -38,12 +35,11 @@ const projects = computed(() => {
 
     <div class="flex flex-wrap items-end justify-between mb-[30px] md:mb-[70px] gap-2 md:gap-0 ">
 
-        <h3 class="text-[36px] md:text-[80px] mb-2 manrope-font leading-[100%]">Наши проекты</h3>
+        <h3 v-show="props.show_title" class="text-[36px] md:text-[80px] mb-2 manrope-font leading-[100%]">Наши проекты</h3>
 
-
-      <div class="flex gap-2">
+      <div class="flex gap-2 border-b border-black w-full pb-[30px]">
         <Button @click="slider.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
-        <Button @click="slider.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующий"/>
+        <Button @click="slider.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующий проект"/>
       </div>
     </div>
     <Carousel ref="slider"  v-bind="carouselConfig">
