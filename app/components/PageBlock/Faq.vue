@@ -16,29 +16,31 @@ const faqs = [
 <template>
 <section>
   <div class="container">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-[50px] md:gap-0  pb-[80px] md:pb-[140px] border-b border-black">
-      <div class=""><h3 class="text-[36px] md:text-[80px] manrope-font leading-[100%]">Часто задаваемые вопросы</h3></div>
-      <div class="">
-        <Accordion expandIcon="pi pi-plus" collapseIcon="pi pi-minus">
-          <AccordionPanel v-for="(item,index) in faqs" :value="index">
+    <BlockTitleWithSmallText  extra_class="md:max-w-[50%] md:mb-[60px]" small-text="FAQ"
+                              big-text="Часто задаваемые вопросы"/>
 
-            <AccordionHeader><p class="max-w-[80%]"><sup class="opacity-40 text-[12px] mr-1">0{{index+1}}</sup> {{item.q}}</p>
-              <template #toggleicon>
-                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="36" height="36" rx="7" fill="#F8F8F8"/>
-                  <path d="M13.0501 22.9496L22.9496 13.0501M22.9496 13.0501L16.6414 12.9943M22.9496 13.0501L23.0054 19.3583" stroke="#2C2C2C" stroke-linecap="round"/>
-                </svg>
+    <Accordion expandIcon="pi pi-plus" collapseIcon="pi pi-minus">
+      <AccordionPanel v-for="(item,index) in faqs" :value="index">
 
-              </template>
-            </AccordionHeader>
-            <AccordionContent>
-              <p class="m-0" v-html="item.a"></p>
-            </AccordionContent>
-          </AccordionPanel>
+        <AccordionHeader>
+          <div class="grid grid-cols-2">
+            <p class="max-w-[80%]">{{item.q}}</p>
+          </div>
 
-        </Accordion>
-      </div>
-    </div>
+          <template #toggleicon>
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="7" fill="#F8F8F8"/>
+              <path d="M13.0501 22.9496L22.9496 13.0501M22.9496 13.0501L16.6414 12.9943M22.9496 13.0501L23.0054 19.3583" stroke="#2C2C2C" stroke-linecap="round"/>
+            </svg>
+          </template>
+        </AccordionHeader>
+        <AccordionContent>
+          <p class="m-0" v-html="item.a"></p>
+        </AccordionContent>
+      </AccordionPanel>
+
+    </Accordion>
+
   </div>
 </section>
 </template>

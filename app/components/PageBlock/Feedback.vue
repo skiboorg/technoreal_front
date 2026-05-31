@@ -40,19 +40,22 @@ const carouselConfig = {
     <section>
       <div class="">
         <div class="flex flex-wrap items-start justify-between mb-[40px] md:mb-0 relative">
-          <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[30px] md:mb-[70px]" small-text="Наши работы"
-                                   big-text="Отзывы наших клиентов о сотрудничестве и качестве работы"/>
+          <div class="">
+            <BlockTitleWithSmallText extra_class=" mb-[30px] md:mb-[70px]" small-text="Отзывы"
+                                     big-text="Отзывы наших клиентов"/>
+          </div>
+
           <div class="absolute md:relative bottom-0 flex gap-2">
             <Button @click="carousel.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
             <Button @click="carousel.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующие отзывы"/>
           </div>
         </div>
         <Carousel ref="carousel" v-bind="carouselConfig">
-          <Slide v-for="i in data" class="flex flex-col items-start justify-start">
-            <div class="flex gap-7 items-center mb-9">
+          <Slide v-for="i in data" class="flex flex-col items-start justify-start bg-[#F3F3F3] p-8 rounded">
+            <div class="flex gap-7 items-center mb-5 ">
               <img class="w-[88px] h-[88px] rounded-full object-cover " :src="i.client_photo" alt="">
-              <p class="manrope-font">{{i.client_name}}<br>
-                <span class="font-bold">{{i.client_position}}</span>
+              <p class="manrope-font text-[#929292]">{{i.client_name}}<br>
+                <span class="font-bold text-black">{{i.client_position}}</span>
               </p>
             </div>
             <p v-html="i.text"></p>

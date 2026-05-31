@@ -5,19 +5,22 @@ const config = useRuntimeConfig();
 </script>
 
 <template>
-<div v-if="item" class="border-t border-black py-7 grid grid-cols-12 gap-[30px] md:gap-0">
-  <div class="col-span-12 md:col-span-1">0{{index+1}}</div>
-  <h3 class="col-span-12 md:col-span-5 text-[22px] md:text-[36px] leading-[100%]" >{{item.name}}</h3>
-  <div class="col-span-12 md:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-7">
-    <div class="order-1 md:order-0">
-      <img class="" :src="config.public.apiUrl+item.cover" alt="">
+
+    <div
+        v-if="item"
+        class="w-full h-[325px] bg-cover bg-center p-5 flex flex-col justify-end items-start "
+        :style="`background-image: linear-gradient(180deg, rgba(24,11,1,0) 0%,
+  rgba(24,11,1,0.8) 100%), url(${config.public.apiUrl + item.cover})`"
+    >
+<p class="text-white font-semibold text-[22px] mb-5">{{item.name}}</p>
+    <nuxt-link  :to="`/services/${item.slug}`" class="inline-flex items-center text-sm text-white gap-2 border-b border-white ">
+      Подробнее
+      <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.501235 10.4554L10.4007 0.555882M10.4566 6.86402L10.4007 0.555882L4.09259 0.500058" stroke="white" stroke-linecap="round"/>
+      </svg>
+    </nuxt-link>
     </div>
-    <div class="order-0 md:order-1 flex flex-col items-start justify-between gap-[30px] md:gap-0">
-      <p class="text-gray-500">{{item.short_description}}</p>
-      <UIMoreBtn v-if="show_btn" :to="`/services/${item.slug}`"/>
-    </div>
-  </div>
-</div>
+
 </template>
 
 <style scoped>

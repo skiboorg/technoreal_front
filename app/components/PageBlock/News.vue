@@ -7,12 +7,11 @@ const {data} = useAsyncData(()=>$api.blank.news(true))
 <template>
 <section>
   <div class="container  ">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-7 border-b border-black mb-[80px] md:mb-[140px] pb-[80px] md:pb-[140px]">
-      <div class="">
-        <h2 class="text-[36px] md:text-[80px] manrope-font font-medium leading-tight max-w-xl">
-          Новости
-        </h2>
-      </div>
+    <BlockSectionTitle title="Новости компании"
+                       link_label = 'Все новости'
+                       link_to = '/news'/>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7 border-b   pb-[80px] md:pb-[120px]">
+
       <CardNews v-for="item in data" :name="item.name"
                 :image="item.cover"
                 :to="`/news/${item.slug}`"

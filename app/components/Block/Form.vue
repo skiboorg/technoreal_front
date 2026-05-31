@@ -50,33 +50,31 @@ const sendForm = async () => {
 <template>
   <div class="grid grid-cols-12 gap-3 md:gap-7">
     <div class="col-span-12 md:col-span-6">
-      <FloatLabel variant="on">
-        <InputText fluid v-model="formData.name" />
-        <label>Ваше имя*</label>
-      </FloatLabel>
+
+        <InputText fluid v-model="formData.name" placeholder="Ваше имя*"/>
+
     </div>
     <div class="col-span-12 md:col-span-6">
-      <FloatLabel variant="on">
-        <InputMask mask="+7(999) 999-99-99" fluid v-model="formData.phone" />
-        <label>Номер телефона*</label>
-      </FloatLabel>
+
+        <InputMask mask="+7(999) 999-99-99" fluid v-model="formData.phone" placeholder="Номер телефона*"/>
+
     </div>
     <div class="col-span-12">
-      <FloatLabel variant="on">
-        <InputText fluid v-model="formData.text" />
-        <label>Расскажите о вашем проекте</label>
-      </FloatLabel>
+
+        <InputText fluid v-model="formData.text" placeholder="Расскажите про ваш проект"/>
+
     </div>
     <div class="col-span-12 relative">
-      <FloatLabel variant="on">
+
         <InputText
             readonly
             fluid
             :value="formData.file ? formData.file.name : ''"
+            placeholder="Прикрепить файл"
         />
-        <label class="!leading-[120%]" v-if="!formData.file">Прикрепить файл <br class="block md:hidden"> <span>(не обязательно)</span>  </label>
-      </FloatLabel>
-      <label class="absolute right-0 top-[10px] border-b border-black cursor-pointer">
+
+
+      <label class="absolute right-4 top-[10px] border-b border-black cursor-pointer">
         Выбрать файл
         <input type="file" class="hidden" @change="handleFileChange" />
       </label>
@@ -93,6 +91,7 @@ const sendForm = async () => {
           fluid
           :label="loading ? 'Отправка...' : 'Рассчитать стоимость'"
           :loading="loading"
+          severity="contrast"
           :disabled="!agree || !formData.name || !formData.phone "
           @click="sendForm"
       />

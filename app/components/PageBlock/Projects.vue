@@ -25,16 +25,26 @@ const { data: loadedProjects } = await useAsyncData(
       <BlockSectionTitle
           v-if="show_title"
           title="Наши проекты"
+          w_border="1"
           link_label="ВСЕ проекты"
           link_to="/cases"
+
       />
     <div v-if="!is_index_page" class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
     <CardCase  v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
 
-    </div>
-    <div v-else class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 border-b border-t py-10 border-black  mb-[80px] md:mb-[140px]">
 
-      <CardSmallCase v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
+    </div>
+    <div v-else class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 border-b  pb-10   mb-[80px] md:mb-[140px]">
+
+      <NuxtLink v-for="(item,index) in loadedProjects" :to="`/cases/${item.slug}`">
+      <CardProjectNew
+
+                      :image="item.cover"
+                      :title="item.name"
+                      :tag="item.category"
+      />
+      </NuxtLink>
     </div>
 
 

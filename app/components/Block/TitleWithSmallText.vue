@@ -12,25 +12,15 @@ defineProps(['smallText','bigText','extra_class'])
 <!--  </div>-->
 <!--</template>-->
 <template>
-  <h2 class="hidden md:block    text-zinc-800 text-5xl font-semibold manrope-font leading-[48px]" :class='extra_class ? extra_class : "w-[60%]"'>
-    <span class="text-neutral-400 text-sm align-top mr-[43px] relative top-[6px] " >
+ <p class="text-[#AAAAAA] text-sm align-top mb-7 " >
       {{smallText}}
-    </span>
-    <span v-html="bigText"></span>
-
-  </h2>
+    </p>
   <h2
       class="
-      block md:hidden
       w-full
       mb-[80px]
-      text-zinc-800 text-[22px]  font-semibold manrope-font leading-[22px] "
-      :class='extra_class'>
-    <span class="text-neutral-400 text-sm align-top mr-[43px] relative top-[6px] " >
-      {{smallText}}
-    </span>
-
-    <span class=" block mt-10  " v-html="bigText"></span>
+      text-zinc-800 text-[24px] md:text-[36px]  font-semibold manrope-font leading-[110%] "
+      :class='extra_class' v-html="bigText">
   </h2>
 </template>
 <style scoped>
