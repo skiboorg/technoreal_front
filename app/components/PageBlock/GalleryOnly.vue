@@ -11,7 +11,8 @@ const carouselConfig = {
   itemsToShow:1,
 
   breakpointMode: 'carousel',
-  wrapAround: true,
+  snapAlign:'start',
+  wrapAround: false,
   gap:20,
   //autoplay:1000,
 
@@ -30,7 +31,7 @@ const carouselConfig = {
 
     },
     1300: {
-      itemsToShow: 5,
+      itemsToShow: 4,
       gap: 20,
 
     },

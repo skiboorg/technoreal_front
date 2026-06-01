@@ -25,7 +25,7 @@ const stats = [
       <BlockTitleWithSmallText  extra_class="md:max-w-[50%] md:mb-[100px]" small-text="О нас" big-text="Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование"/>
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
         <div class="" v-for="i in stats">
-          <p class="manrope-font text-[26px] md:text-5xl font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{i.value}}</p>
+          <p class="manrope-font text-[40px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{i.value}}</p>
           <p class="text-[#7D7D7D] text-sm">{{i.description}}</p>
         </div>
 
