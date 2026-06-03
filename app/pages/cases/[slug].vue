@@ -21,31 +21,31 @@ useSeoMeta({
   <section>
 
     <div class="container">
-      <BlockTitleWithSmallText extra_class="max-w-[50%] mb-[100px]" small-text="Что было сделано"
+      <BlockTitleWithSmallText extra_class="md:max-w-[50%] mb-[60px] md:mb-[100px]" small-text="Что было сделано"
                                :big-text="data.heading"/>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-[80px] md:mb-[120px]">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-[60px] md:gap-5 mb-[120px]">
         <div >
-          <p class=" text-[16px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{data.heading_1}}</p>
-          <p class="text-[#7D7D7D]">{{data.text_1}}</p>
+          <p class=" text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{data.heading_1}}</p>
+          <p class="text-[#7D7D7D] text-sm">{{data.text_1}}</p>
         </div>
         <div >
-          <p class="text-[16px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{data.heading_2}}</p>
-          <p class="text-[#7D7D7D]">{{data.text_2}}</p>
+          <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{data.heading_2}}</p>
+          <p class="text-[#7D7D7D] text-sm">{{data.text_2}}</p>
         </div>
-        <div >
-          <p class="text-[16px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{data.heading_3}}</p>
-          <p class="text-[#7D7D7D]">{{data.text_3}}</p>
+        <div v-if="data.heading_3">
+          <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{data.heading_3}}</p>
+          <p class="text-[#7D7D7D] text-sm">{{data.text_3}}</p>
         </div>
-        <div >
+        <div v-if="data.heading_4">
 
-          <p class="text-[16px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{data.heading_4}}</p>
-          <p class="text-[#7D7D7D]">{{data.text_4}}</p>
+          <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{data.heading_4}}</p>
+          <p class="text-[#7D7D7D] text-sm">{{data.text_4}}</p>
         </div>
       </div>
     </div>
 
-    <PageBlockGalleryOnly full_title="1" :name="data.name" :items="data.gallery_images" class="mb-[80px] md:mb-[120px]"/>
+    <PageBlockGalleryOnly full_title="1" :name="data.name" :items="data.gallery_images" class="mb-[120px]"/>
     <div class="container">
 <!--      <BlockTitleWithSmallText extra_class="max-w-[70%] mb-[70px]" small-text="Результат"-->
 <!--                               big-text="Результат, который<br>мы получили по итогу<br>сотрудничества"/>-->
@@ -53,7 +53,7 @@ useSeoMeta({
 <!--        <CardResult v-for="(item,index) in data.results" :item="item" :index="index" :key="index"/>-->
 
 <!--      </div>-->
-      <BlockTitleWithSmallText extra_class="!max-w-[70%] mb-[60px]"  small-text="Отзыв  клиента"
+      <BlockTitleWithSmallText extra_class="!md:max-w-[70%] mb-[60px]"  small-text="Отзыв  клиента"
                                :big-text="`«${data.client_review_text}».`"/>
       <div class="flex gap-7 items-center mb-[120px]">
         <img class="w-[88px] h-[88px] rounded-full object-cover" :src="data.client_photo" alt="">

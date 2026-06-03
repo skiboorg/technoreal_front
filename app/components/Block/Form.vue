@@ -48,7 +48,7 @@ const sendForm = async () => {
 </script>
 
 <template>
-  <div class="grid grid-cols-12 gap-3 md:gap-7">
+  <div class="grid grid-cols-12 gap-3 ">
     <div class="col-span-12 md:col-span-6">
 
         <InputText fluid v-model="formData.name" placeholder="Ваше имя*"/>

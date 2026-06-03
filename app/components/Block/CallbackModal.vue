@@ -16,8 +16,9 @@ defineProps(['with_icon','is_text','is_link','not_absolute'])
         </div>
   </template>
   <template v-else>
-    <Button v-if="!is_text" class="w-full md:w-auto" @click="visible = true" icon-pos="right" :icon="with_icon ? 'pi pi-arrow-up-right' : null"
-            label="Обсудить проект"/>
+    <Button v-if="!is_text" class="w-auto" @click="visible = true" icon-pos="right" :icon="with_icon ? 'pi pi-arrow-up-right' : null"
+            label="Обсудить проект">
+    </Button>
   </template>
 
   <Dialog v-model:visible="visible" modal class="relative max-w-[90%] md:max-w-[60%] " header="Расскажите о вашем проекте" >

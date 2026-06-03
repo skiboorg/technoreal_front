@@ -18,7 +18,7 @@ function toggle(index: number) {
 </script>
 
 <template>
-  <section class="mb-[80px] md:mb-[140px]">
+  <section class="mb-[80px] md:mb-[120px]">
     <div class="container">
       <BlockTitleWithSmallText
         extra_class="md:max-w-[50%] mb-[40px] md:mb-[60px]"
@@ -53,10 +53,10 @@ function toggle(index: number) {
 
             <!-- Кнопка раскрытия -->
             <span
-              class="shrink-0 flex items-center justify-center w-[36px] h-[36px] rounded-[7px] bg-[#F8F8F8] transition-transform duration-200"
-              :class="openIndex === index ? 'rotate-45' : ''"
+              class="shrink-0 flex items-center justify-center w-[36px] h-[36px] rounded-[7px] bg-[#F8F8F8] "
             >
-              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <svg width="14" height="14" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-transform duration-200" :class="openIndex === index ? 'rotate-90' : ''">
                 <path d="M1.16753 11.0748L10.9395 1.30283M10.9395 1.30283L4.7266 1.26168M10.9395 1.30283L10.9807 7.51577" stroke="#2C2C2C" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </span>

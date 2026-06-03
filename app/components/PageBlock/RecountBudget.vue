@@ -2,19 +2,19 @@
 </script>
 
 <template>
-  <section class="relative mb-[80px] md:mb-[120px] overflow-hidden">
+  <section class="relative mb-[120px] overflow-hidden">
     <img class="absolute inset-0 w-full h-full object-cover" src="/form.jpg" alt=""/>
 <!--    <div-->
 <!--      class="absolute inset-0"-->
 <!--      style="background: linear-gradient(224deg, rgba(20,11,5,0) 0%, rgba(20,11,5,0.92) 57%)"-->
 <!--    />-->
-    <div class="relative container py-[60px] md:py-[100px]">
+    <div class="relative container py-[100px]">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-[60px] items-start">
 
         <div class="flex flex-col justify-start">
-          <p class="text-white/60 text-[14px] tracking-[-0.03em] mb-7 md:mb-4 manrope-font">Пересчитаем смету</p>
+          <p class="text-white/60 text-[14px] tracking-[-0.03em] mb-7 md:mb-4 font-medium manrope-font">Пересчитаем смету</p>
           <h2 class="text-white manrope-font text-[26px] md:text-[36px] font-semibold leading-[110%] tracking-[-0.03em]">
-            Предоставьте нам смету от<br> другой компании — мы предложим<br> более выгодные условия без<br> потери качества
+            Предоставьте нам смету от<br class="hidden md:block"> другой компании — мы предложим<br class="hidden md:block"> более выгодные условия без<br class="hidden md:block"> потери качества
           </h2>
         </div>
 

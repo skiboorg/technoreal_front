@@ -37,28 +37,28 @@ const laptop = breakpoints.between('laptop', 'desktop')
   <div class="container">
   <BlockTitleWithSmallText  extra_class="max-w-[70%] mb-[60px] md:mb-[100px]" small-text="Об услуге"
                              :big-text="data.heading_1"/>
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-[120px] md:mb-[220px]">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-[60px] md:gap-5 mb-[120px] ">
       <div class="">
-        <p class=" text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
+        <p class=" text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">
           {{data.target_audience_title}}
         </p>
 
         <p class="text-gray-500">{{data.target_audience}}</p>
       </div>
       <div class="">
-        <p class="text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
+        <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">
           {{data.recommendation_title}}
         </p>
         <p class="text-gray-500">{{data.recommendation}}</p>
       </div>
-      <div class="">
-        <p class="text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
+      <div v-if="data.heading_3" class="">
+        <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">
           {{data.heading_3}}
         </p>
         <p class="text-gray-500">{{data.text_3}}</p>
       </div>
-      <div class="">
-        <p class="text-[16px] font-semibold border-b border-black mb-[15px] pb-[25px]">
+      <div v-if="data.heading_4" class="">
+        <p class="text-[18px] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">
           {{data.heading_4}}
         </p>
         <p class="text-gray-500">{{data.text_4}}</p>
@@ -66,9 +66,13 @@ const laptop = breakpoints.between('laptop', 'desktop')
 
 
     </div>
-    <PageBlockGalleryOnly full_title="1" name="Варианты реализации витрин в торговом пространстве" top_name="Варианты проектов" :items="data.images" class="mb-[80px] md:mb-[120px]"/>
-    <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[120px]  border-b  "/>
   </div>
+    <PageBlockGalleryOnly full_title="1" name="Варианты реализации витрин в торговом пространстве" top_name="Варианты проектов" :items="data.images" class="mb-[80px] md:mb-[120px]"/>
+   <div class="container">
+     <PageBlockFeedback class="mb-[80px] md:mb-[140px] pb-[80px] md:pb-[120px]  border-b  "/>
+   </div>
+
+
     <PageBlockRecountBudget/>
   <div class="container">
     <PageBlockProjects

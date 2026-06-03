@@ -6,7 +6,7 @@ defineProps(['image','name', 'date', 'is_news_item', 'to','services'])
   <div class="">
 
     <div class="mb-2 md:mb-6 pb-4" :class="is_news_item ? 'border-b ' : ''" >
-      <img class="w-full " :class="is_news_item ? '' : 'h-auto md:h-[350px] object-cover'" :src="image" alt="">
+      <img class="w-full " :class="is_news_item ? 'h-[250px] aspect-3/2 object-cover' : 'h-auto md:h-[350px] aspect-3/2 object-cover'" :src="image" alt="">
     </div>
     <div class="grid grid-cols-12">
       <div class="col-start-1 col-end-9">

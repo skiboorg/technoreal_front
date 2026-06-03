@@ -26,10 +26,9 @@
         </div>
 
         <div class="block md:hidden">
-          <a href="/contacts#form">
-            <Button class="mb-[50px]" label="Обсудить проект"/>
-          </a>
-
+            <div class="mb-[50px]">
+              <BlockCallbackModal with_icon="1" class="max-w-[50%]"/>
+            </div>
           <a href="/policy.pdf" target="_blank" class="block opacity-50 mb-[5px] font-light">Политика конфиденциальности</a>
           <a href="https://t.me/vkryaz" target="_blank" class="block opacity-50 mb-[5px] font-light">Разработка сайта</a>
           <p class="opacity-50 font-light">© 2008 - {{new Date().getFullYear()}} Технореал</p>

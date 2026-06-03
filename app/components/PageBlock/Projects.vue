@@ -30,19 +30,19 @@ const { data: loadedProjects } = await useAsyncData(
           link_to="/cases"
 
       />
-    <div v-if="!is_index_page" class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] mb-[80px] md:pb-[120px] md:mb-[140px]">
+    <div v-if="!is_index_page" class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[80px] md:pb-[120px] mb-[120px]">
     <CardCase  v-for="(item,index) in loadedProjects" :item="item" :index="index" :total="loadedProjects.length"/>
 
-
     </div>
-    <div v-else class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 border-b  pb-10   mb-[80px] md:mb-[140px]">
+    <div v-else class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-7 border-b  pb-10   mb-[120px]">
 
       <NuxtLink v-for="(item,index) in loadedProjects" :to="`/cases/${item.slug}`">
+
       <CardProjectNew
 
                       :image="item.cover"
                       :title="item.name"
-                      :tag="item.category"
+                      :tag="item.tags?.split(',')[0]"
       />
       </NuxtLink>
     </div>

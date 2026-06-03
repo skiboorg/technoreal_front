@@ -13,7 +13,7 @@ useSeoMeta({
   <section>
     <div class="container">
       <BlockSectionTitle title="Услуги" :is_h1="true"/>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-b border-black pb-[120px] ">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 border-b border-black pb-[120px] ">
         <CardService v-for="(item,index) in data" :total="data.length" :item="item" :index="index"/>
       </div>
 

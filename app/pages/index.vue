@@ -34,8 +34,8 @@ const heroTags = [
   <PageBlockStats/>
 
   <!-- 3. Услуги -->
-  <div class="container mb-[80px] md:mb-[120px]">
-    <PageBlockServices class="border-b border-black"/>
+  <div class="container mb-[120px]">
+    <PageBlockServices class="border-b pb-8"/>
   </div>
 
   <!-- 4. Пересчитаем смету -->
@@ -47,7 +47,7 @@ const heroTags = [
 
       :is_index_page="true"
       :show_title="true"
-      class="mb-[80px] md:mb-[120px]"
+      class="mb-[120px]"
     />
 
   </div>
@@ -56,7 +56,7 @@ const heroTags = [
   <PageBlockPrinciples/>
 
   <!-- 7. Галерея -->
-  <PageBlockGalleryOnly :items="images" class="mb-[80px] md:mb-[120px]"/>
+  <PageBlockGalleryOnly :items="images" class="mb-[120px]"/>
 
   <!-- 8. FAQ -->
   <PageBlockFaqNew/>

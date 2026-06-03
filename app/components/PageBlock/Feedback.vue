@@ -28,7 +28,7 @@ const carouselConfig = {
     1300: {
       itemsToShow: 4,
       snapAlign:'start',
-      gap: 40,
+      gap: 20,
 
     },
   }

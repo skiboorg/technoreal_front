@@ -18,8 +18,8 @@ defineProps(['smallText','bigText','extra_class'])
   <h2
       class="
       w-full
-      mb-[80px]
-      text-zinc-800 text-[24px] md:text-[36px]  font-semibold manrope-font leading-[110%] "
+
+      text-zinc-800 text-[24px] md:text-[36px]  font-semibold manrope-font leading-[105%] md:leading-[110%] "
       :class='extra_class' v-html="bigText">
   </h2>
 </template>

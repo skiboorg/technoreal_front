@@ -20,16 +20,16 @@ const stats = [
 </script>
 
 <template>
-  <section class="container mb-[80px] md:mb-[120px]">
-    <div class="container">
-      <BlockTitleWithSmallText  extra_class="md:max-w-[50%] md:mb-[100px]" small-text="О нас" big-text="Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование"/>
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+  <section class="container mb-[120px]">
+
+      <BlockTitleWithSmallText  extra_class="md:max-w-[50%] mb-[60px] md:mb-[100px]" small-text="О нас" big-text="Помогаем брендам заявить о себе на международном рынке через эффективное торговое оборудование"/>
+      <div class="grid grid-cols-1 lg:grid-cols-4 gap-[60px] md:gap-6">
         <div class="" v-for="i in stats">
-          <p class="manrope-font text-[40px] font-semibold border-b border-[#E6E6E6] mb-[15px] pb-[25px]">{{i.value}}</p>
-          <p class="text-[#7D7D7D] text-sm">{{i.description}}</p>
+          <p class="manrope-font text-[40px] leading-[100%] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{i.value}}</p>
+          <p class="text-[#7D7D7D] font-medium text-sm">{{i.description}}</p>
         </div>
 
       </div>
-    </div>
+
   </section>
 </template>
