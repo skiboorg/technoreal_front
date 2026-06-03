@@ -59,7 +59,10 @@ const heroTags = [
   <PageBlockGalleryOnly :items="images" class="mb-[120px]"/>
 
   <!-- 8. FAQ -->
-  <PageBlockFaqNew/>
+  <div class="container">
+    <PageBlockFaqNew/>
+  </div>
+
 
   <!-- 9. Новости (после FAQ, как в макете) -->
   <PageBlockNews/>

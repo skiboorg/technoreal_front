@@ -43,7 +43,7 @@ function handleButtonClick() {
     <img class="absolute inset-0 w-full h-full object-cover" :src="image" alt=""/>
     <div
       class="absolute inset-0"
-      style="background: linear-gradient(180deg, rgba(24,11,1,0.2), rgba(24,11,1,0.2))"
+      style="background: linear-gradient(180deg, rgba(24,11,1,0.1), rgba(24,11,1,0.1))"
     />
     <!-- Навигация поверх изображения -->
     <div
