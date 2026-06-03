@@ -8,7 +8,7 @@ const config = useRuntimeConfig();
 
     <div
         v-if="item"
-        class=" w-[380px] h-[380px] md:w-full md:h-[325px] bg-cover bg-center p-5 flex flex-col justify-end items-start "
+        class=" w-[380px] h-[380px] md:w-full md:h-[325px] bg-cover bg-center px-5 py-[30px] flex flex-col justify-end items-start "
         :style="`background-image: linear-gradient(180deg, rgba(24,11,1,0) 0%,
   rgba(24,11,1,0.8) 100%), url(${config.public.apiUrl + item.cover})`"
     >

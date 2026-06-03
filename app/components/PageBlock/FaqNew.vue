@@ -19,7 +19,7 @@ function toggle(index: number) {
 
 <template>
   <section class="mb-[80px] md:mb-[120px]">
-    <div class="container">
+
       <BlockTitleWithSmallText
         extra_class="md:max-w-[50%] mb-[40px] md:mb-[60px]"
         small-text="FAQ"
@@ -79,6 +79,6 @@ function toggle(index: number) {
           </Transition>
         </div>
       </div>
-    </div>
+
   </section>
 </template>
