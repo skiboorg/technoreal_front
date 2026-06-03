@@ -62,7 +62,7 @@ watch(() => route.hash, (newHash) => {
     </div>
     <div id="form" class="grid grid-cols-1 md:grid-cols-2 py-7 md:py-[60px] border-t border-b border-black items-center">
       <p class="text-[20px] md:text-[32px] font-semibold mb-4 md:mb-0">Обсудить проект</p>
-      <BlockForm/>
+      <BlockForm class="bg-[#F3F3F3] p-4"/>
     </div>
   </div>
 </template>
