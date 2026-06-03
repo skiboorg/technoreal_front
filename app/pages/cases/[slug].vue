@@ -81,7 +81,10 @@ useSeoMeta({
 <!--      </div>-->
 <!--      <div v-show="data.content" class="html_content mt-20" v-html="data.content"></div>-->
 <!--    </div>-->
-    <PageBlockFaqNew />
+    <div class="container">
+      <PageBlockFaqNew />
+    </div>
+
     <div class="container border-b"></div>
   </section>
 </template>
