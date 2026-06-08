@@ -38,8 +38,9 @@ function handleButtonClick() {
 }
 </script>
 <template>
-  <section class="relative flex flex-col h-[700px] md:h-[790px] mb-[120px]">
+  <section class="relative flex flex-col h-svh md:h-[790px] mb-[120px]">
     <!-- Фоновое изображение -->
+
     <img class="absolute inset-0 w-full h-full object-cover" :src="image" alt=""/>
     <div
       class="absolute inset-0"

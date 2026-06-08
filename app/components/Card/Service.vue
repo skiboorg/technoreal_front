@@ -20,7 +20,7 @@ const carouselConfig = {
       <div class="">
         <Carousel ref="carousel1" v-bind="carouselConfig">
           <Slide v-for="i in item.slider_images" >
-            <img class="w-full h-[360px] object-cover" :src="i.image" alt="">
+            <img class="w-full aspect-square object-cover" :src="i.image" alt="">
           </Slide>
           <template ></template>
         </Carousel>

@@ -69,7 +69,7 @@ const carouselConfig = {
         </div>
         <Carousel ref="slider" v-bind="carouselConfig" class="border-b pb-10">
           <Slide v-for="(i, idx) in items" :key="idx" class="flex flex-col items-start">
-            <img class="w-full  h-[380px] md:h-[325px] object-cover" :src="i.image" alt=""/>
+            <img class="w-full aspect-square object-cover" :src="i.image" alt=""/>
           </Slide>
         </Carousel>
       </div>

@@ -26,7 +26,7 @@ const stats = [
       <div class="grid grid-cols-1 lg:grid-cols-4 gap-[60px] md:gap-6">
         <div class="" v-for="i in stats">
           <p class="manrope-font text-[40px] leading-[100%] font-semibold border-b border-[#E6E6E6] mb-4 pb-4">{{i.value}}</p>
-          <p class="text-[#7D7D7D] font-medium text-sm">{{i.description}}</p>
+          <p class="text-[#7D7D7D] max-w-[80%] md:max-w-full font-medium text-sm">{{i.description}}</p>
         </div>
 
       </div>

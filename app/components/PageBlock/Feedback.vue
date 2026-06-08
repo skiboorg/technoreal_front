@@ -45,7 +45,7 @@ const carouselConfig = {
                                      big-text="Отзывы наших клиентов"/>
           </div>
 
-          <div class="absolute md:relative bottom-0 flex gap-2">
+          <div class="relative bottom-0 flex gap-2">
             <Button @click="carousel.prev()" severity="contrast" icon="pi pi-arrow-left" size="sm"/>
             <Button @click="carousel.next()" severity="contrast" icon="pi pi-arrow-right" icon-pos="right" size="sm" label="Следующие отзывы"/>
           </div>

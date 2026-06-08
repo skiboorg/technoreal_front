@@ -7,14 +7,13 @@ defineProps<{
 </script>
 
 <template>
-  <div class="group relative overflow-hidden cursor-pointer h-[325px]">
+  <div class="group relative overflow-hidden cursor-pointer w-full aspect-square">
     <!-- Картинка -->
     <img
       :src="image"
       alt=""
-      class="absolute inset-0 w-[380px] h-[380px] md:w-full md:h-full object-cover transition-all duration-300 grayscale group-hover:grayscale-0"
+      class="absolute inset-0  object-cover transition-all duration-300 grayscale group-hover:grayscale-0"
     />
-
     <!-- Тёмный оверлей (убирается при ховере) -->
     <div
       class="absolute inset-0 bg-white/60 transition-opacity duration-300 group-hover:opacity-0"

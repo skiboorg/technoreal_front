@@ -5,7 +5,7 @@ defineProps(['item','index','total'])
 <template>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-7 border-t border-black pt-7">
     <div class="">
-      <img class="w-full h-full" :src="item.cover" alt="">
+      <img class="w-full aspect-square" :src="item.cover" alt="">
     </div>
     <div class="flex flex-col items-start justify-between">
       <div class="w-full">
